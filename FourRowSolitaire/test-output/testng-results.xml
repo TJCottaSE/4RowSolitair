@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="157" started-at="2017-04-26T09:23:32Z" finished-at="2017-04-26T09:23:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="157" started-at="2017-04-26T09:23:32Z" finished-at="2017-04-26T09:23:32Z">
+      <class name="test.AcePileTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.AcePileTest@6a024a67]" name="setUp" is-config="true" duration-ms="8" started-at="2017-04-26T02:23:32Z" finished-at="2017-04-26T02:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AcePile()[pri:0, instance:test.AcePileTest@6a024a67]" name="AcePile" duration-ms="59" started-at="2017-04-26T02:23:32Z" finished-at="2017-04-26T02:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AcePile -->
+        <test-method status="PASS" signature="testGetCardAtLocationPoint()[pri:0, instance:test.AcePileTest@6a024a67]" name="testGetCardAtLocationPoint" duration-ms="46" started-at="2017-04-26T02:23:32Z" finished-at="2017-04-26T02:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardAtLocationPoint -->
+        <test-method status="PASS" signature="testIsValidMoveCard()[pri:0, instance:test.AcePileTest@6a024a67]" name="testIsValidMoveCard" duration-ms="11" started-at="2017-04-26T02:23:32Z" finished-at="2017-04-26T02:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCard -->
+        <test-method status="PASS" signature="testIsValidMoveCardStack()[pri:0, instance:test.AcePileTest@6a024a67]" name="testIsValidMoveCardStack" duration-ms="1" started-at="2017-04-26T02:23:32Z" finished-at="2017-04-26T02:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCardStack -->
+        <test-method status="PASS" signature="testPushCard()[pri:0, instance:test.AcePileTest@6a024a67]" name="testPushCard" duration-ms="10" started-at="2017-04-26T02:23:32Z" finished-at="2017-04-26T02:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPushCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.AcePileTest@6a024a67]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-26T02:23:32Z" finished-at="2017-04-26T02:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AcePileTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
