@@ -1,5 +1,9 @@
 package test;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNull;
@@ -22,10 +26,12 @@ public class AcePileTest {
 	
 
 	
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() throws Exception {
 	}
 
+	@AfterMethod
 	@AfterClass
 	public void tearDown() throws Exception {
 	}
@@ -40,17 +46,17 @@ public class AcePileTest {
 		aceDiamondsPile = new AcePile(Card.DIAMONDS_SUIT);
 		aceHeartsPile = new AcePile(Card.HEARTS_SUIT);
 		
-		assertTrue(aceSpadesPile.getSuit() == Card.SPADES_SUIT);
-		assertFalse(aceSpadesPile.getSuit() == Card.CLUBS_SUIT);
+		AssertJUnit.assertTrue(aceSpadesPile.getSuit() == Card.SPADES_SUIT);
+		AssertJUnit.assertFalse(aceSpadesPile.getSuit() == Card.CLUBS_SUIT);
 		
-		assertTrue(aceClubsPile.getSuit() == Card.CLUBS_SUIT);
-		assertFalse(aceClubsPile.getSuit() == Card.DIAMONDS_SUIT);
+		AssertJUnit.assertTrue(aceClubsPile.getSuit() == Card.CLUBS_SUIT);
+		AssertJUnit.assertFalse(aceClubsPile.getSuit() == Card.DIAMONDS_SUIT);
 		
-		assertTrue(aceDiamondsPile.getSuit() == Card.DIAMONDS_SUIT);
-		assertFalse(aceDiamondsPile.getSuit() == Card.HEARTS_SUIT);
+		AssertJUnit.assertTrue(aceDiamondsPile.getSuit() == Card.DIAMONDS_SUIT);
+		AssertJUnit.assertFalse(aceDiamondsPile.getSuit() == Card.HEARTS_SUIT);
 		
-		assertTrue(aceHeartsPile.getSuit() == Card.HEARTS_SUIT);
-		assertFalse(aceHeartsPile.getSuit() == Card.SPADES_SUIT);	
+		AssertJUnit.assertTrue(aceHeartsPile.getSuit() == Card.HEARTS_SUIT);
+		AssertJUnit.assertFalse(aceHeartsPile.getSuit() == Card.SPADES_SUIT);	
 	}
 	
 	@Test
@@ -61,11 +67,11 @@ public class AcePileTest {
 		Card card2 = new Card("Spades", 2, 1, 2);
 		Card card3 = new Card("Clubs", 2, 1, 15);
 		
-		assertEquals(card, aceSpadesPile.push(card));
-		assertEquals(card2, aceSpadesPile.push(card2));
-		assertEquals(aceSpadesPile.pop(), card2);
-		assertEquals(aceSpadesPile.pop(), card);
-		assertNull(aceSpadesPile.push(card3));
+		AssertJUnit.assertEquals(card, aceSpadesPile.push(card));
+		AssertJUnit.assertEquals(card2, aceSpadesPile.push(card2));
+		AssertJUnit.assertEquals(aceSpadesPile.pop(), card2);
+		AssertJUnit.assertEquals(aceSpadesPile.pop(), card);
+		AssertJUnit.assertNull(aceSpadesPile.push(card3));
 	}
 
 	@Test
@@ -76,7 +82,7 @@ public class AcePileTest {
 		aceSpadesPile.push(card);
 		Point p = new Point();
 		Card newCard = aceSpadesPile.getCardAtLocation(p);
-		assertEquals(card, newCard);
+		AssertJUnit.assertEquals(card, newCard);
 	}
 
 	@Test
@@ -87,19 +93,19 @@ public class AcePileTest {
 		Card card2 = new Card("Spades", 2, 1, 2);
 		Card card3 = new Card("Clubs", 2, 1, 15);
 		
-		assertFalse(aceSpadesPile.isValidMove(card3));
-		assertTrue(aceSpadesPile.isValidMove(card));
+		AssertJUnit.assertFalse(aceSpadesPile.isValidMove(card3));
+		AssertJUnit.assertTrue(aceSpadesPile.isValidMove(card));
 		aceSpadesPile.push(card);
-		assertTrue(aceSpadesPile.isValidMove(card2));
+		AssertJUnit.assertTrue(aceSpadesPile.isValidMove(card2));
 		aceSpadesPile.pop();
-		assertFalse(aceSpadesPile.isValidMove(card3));
+		AssertJUnit.assertFalse(aceSpadesPile.isValidMove(card3));
 	}
 
 	@Test
 	public void testIsValidMoveCardStack() {
 		aceSpadesPile = new AcePile(Card.SPADES_SUIT);
 		CardStack cs = new CardStack();
-		assertFalse(aceSpadesPile.isValidMove(cs));
+		AssertJUnit.assertFalse(aceSpadesPile.isValidMove(cs));
 	}
 
 }

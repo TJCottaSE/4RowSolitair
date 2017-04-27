@@ -1,11 +1,9 @@
 package test;
 
-import static org.junit.Assert.*;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import FourRowSolitaire.Card;
 
 public class CardTest {
@@ -14,7 +12,7 @@ public class CardTest {
 	Card card3 = null;
 	Card card4 = null;
 	
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		card1 = new Card("Spades", 1, 1, 1);
 		card2 = new Card("Clubs", 1, 1, 13);
@@ -22,7 +20,7 @@ public class CardTest {
 		card4 = new Card("Diamonds", 1, 1, 39);
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 	}
 
@@ -31,31 +29,31 @@ public class CardTest {
 	 */
 	@Test
 	public void test() {
-		assertEquals(card1.getSuit(), "Spades");
-		assertEquals(card1.getNumber(), 1);
-		assertEquals(card1.getFullNumber(), 1);
+		AssertJUnit.assertEquals(card1.getSuit(), "Spades");
+		AssertJUnit.assertEquals(card1.getNumber(), 1);
+		AssertJUnit.assertEquals(card1.getFullNumber(), 1);
 		
-		assertEquals(card2.getSuit(), "Clubs");
-		assertEquals(card2.getNumber(), 1);
-		assertEquals(card2.getFullNumber(), 13);
+		AssertJUnit.assertEquals(card2.getSuit(), "Clubs");
+		AssertJUnit.assertEquals(card2.getNumber(), 1);
+		AssertJUnit.assertEquals(card2.getFullNumber(), 13);
 		
-		assertEquals(card3.getSuit(), "Hearts"); 
-		assertEquals(card3.getNumber(), 1);
-		assertEquals(card3.getFullNumber(), 26);
+		AssertJUnit.assertEquals(card3.getSuit(), "Hearts"); 
+		AssertJUnit.assertEquals(card3.getNumber(), 1);
+		AssertJUnit.assertEquals(card3.getFullNumber(), 26);
 		
-		assertEquals(card4.getSuit(), "Diamonds");
-		assertEquals(card4.getNumber(), 1);
-		assertEquals(card4.getFullNumber(), 39);
+		AssertJUnit.assertEquals(card4.getSuit(), "Diamonds");
+		AssertJUnit.assertEquals(card4.getNumber(), 1);
+		AssertJUnit.assertEquals(card4.getFullNumber(), 39);
 		
 		// Test invalid suit
 		Card card5 = new Card("Joker", 1, 1, 1);
-		assertEquals(card5.getSuit(), "Invalid Suit");
+		AssertJUnit.assertEquals(card5.getSuit(), "Invalid Suit");
 		Card card6 = new Card("Spades", 0, 1, 1);
-		assertEquals(card6.getNumber(), -1);
+		AssertJUnit.assertEquals(card6.getNumber(), -1);
 		Card card7 = new Card("Spades", 14, 1, 1);
-		assertEquals(card7.getNumber(), -1);
+		AssertJUnit.assertEquals(card7.getNumber(), -1);
 		Card card8 = new Card("Spades", 1, 0, 1);
-		assertEquals(card8.getNumber(), 1);
+		AssertJUnit.assertEquals(card8.getNumber(), 1);
 		
 		// Coverage Testing
 		Card card9 = new Card("Spades", 2, 1, 2);
@@ -76,26 +74,26 @@ public class CardTest {
 		@Test
 		public void highlightTest(){
 			card1.highlight();
-			assertTrue(card1.isHighlighted());
+			AssertJUnit.assertTrue(card1.isHighlighted());
 			card1.unhighlight();
-			assertFalse(card1.isHighlighted());
+			AssertJUnit.assertFalse(card1.isHighlighted());
 		}
 		
 		@Test
 		public void faceUpTest(){
 			card1.setFaceUp();
-			assertTrue(card1.isFaceUp());
+			AssertJUnit.assertTrue(card1.isFaceUp());
 			card1.setFaceDown();
-			assertFalse(card1.isFaceUp());
+			AssertJUnit.assertFalse(card1.isFaceUp());
 		}
 		
 		@Test
 		public void validSuitTest(){
-			assertTrue(card1.isValidSuit("Spades"));
-			assertTrue(card1.isValidSuit("Clubs"));
-			assertTrue(card1.isValidSuit("Hearts"));
-			assertTrue(card1.isValidSuit("Diamonds"));
-			assertFalse(card1.isValidSuit("Joker"));
+			AssertJUnit.assertTrue(card1.isValidSuit("Spades"));
+			AssertJUnit.assertTrue(card1.isValidSuit("Clubs"));
+			AssertJUnit.assertTrue(card1.isValidSuit("Hearts"));
+			AssertJUnit.assertTrue(card1.isValidSuit("Diamonds"));
+			AssertJUnit.assertFalse(card1.isValidSuit("Joker"));
 		}
 		
 		@Test
@@ -105,20 +103,20 @@ public class CardTest {
 		
 		@Test
 		public void gettersTest(){
-			assertEquals(card1.getNumber(), 1);
-			assertEquals(card1.getSuit(), "Spades");
-			assertEquals(card1.getColor(), 0 /* =Black */);
-			assertEquals(card1.getFullNumber(), 1);
+			AssertJUnit.assertEquals(card1.getNumber(), 1);
+			AssertJUnit.assertEquals(card1.getSuit(), "Spades");
+			AssertJUnit.assertEquals(card1.getColor(), 0 /* =Black */);
+			AssertJUnit.assertEquals(card1.getFullNumber(), 1);
 			card1.setSource("Testing");
-			assertEquals(card1.getSource(), "Testing");
+			AssertJUnit.assertEquals(card1.getSource(), "Testing");
 		}
 		
 		@Test
 		public void cloneTest(){
 			Card newCard = card1.clone();
-			assertEquals(newCard.getSuit(), "Spades");
-			assertEquals(newCard.getNumber(), 1);
-			assertEquals(newCard.getColor(), 0);
-			assertEquals(newCard.getFullNumber(), 1);
+			AssertJUnit.assertEquals(newCard.getSuit(), "Spades");
+			AssertJUnit.assertEquals(newCard.getNumber(), 1);
+			AssertJUnit.assertEquals(newCard.getColor(), 0);
+			AssertJUnit.assertEquals(newCard.getFullNumber(), 1);
 		}
 }
