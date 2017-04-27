@@ -59,6 +59,9 @@ public class Deck
 
         return deck;
     }
+    public int getDeckNumber(){
+    	return deckNumber;
+    }
 
     public void shuffle()
     {

@@ -1,6 +1,7 @@
 package test;
 
 import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
 import org.junit.After;
