@@ -1,11 +1,14 @@
 package test;
 
-import static org.junit.Assert.*;
-import static org.testng.Assert.assertNotEquals;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNull;
+import static org.testng.Assert.assertTrue;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.*;
 
 import FourRowSolitaire.Card;
 import FourRowSolitaire.CardStack;
@@ -13,13 +16,18 @@ import FourRowSolitaire.CardStack;
 public class CardStackTest {
 	
 	CardStack stack = null;
+	Card black_5, red_4, black_3, red_2;
 	
-	@Before
+	@BeforeClass
 	public void setUp() throws Exception {
 		stack = new CardStack();
+		black_5 = new Card("Spades", 5, 1, 1);
+		red_4 = new Card("Hearts", 4, 1, 2);
+		black_3 = new Card("Clubs", 3, 1, 3);
+		red_2 = new Card("Diamonds", 2, 1, 4);
 	}
 
-	@After
+	@AfterClass
 	public void tearDown() throws Exception {
 		stack = null;
 	}
@@ -62,7 +70,15 @@ public class CardStackTest {
 
 	@Test
 	public void testPopCardStack() {
-		fail("Not yet implemented");
+		stack.push(black_3);
+		stack.push(red_2);
+		
+		CardStack reverse = new CardStack();
+		reverse.push(red_2);
+		reverse.push(black_3);
+		
+		// compares top card of popped stack and expected reversal
+		assertTrue(stack.pop(stack).pop().equals(reverse.pop()));
 	}
 
 	@Test
