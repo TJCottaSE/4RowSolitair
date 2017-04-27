@@ -1,77 +1,87 @@
 package test;
 
-import org.testng.TestNG;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotNull;
-
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNull;
+import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.*;
+
+import FourRowSolitaire.Card;
+import FourRowSolitaire.CardStack;
 import FourRowSolitaire.Column;
 
-public class ColumnTest {
- 
-  @BeforeClass
-  public void beforeClass() {
-  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-
-  @Test
-  public void Column() {
-    throw new RuntimeException("Test not implemented");
-  }
-  
-  @Test
-	public void test_type() throws Exception {
+public class ColumnTest{
+	Card black_K, black_Q, red_Q, black_J, red_10;
+	CardStack stack;
+	Column col;
+	@Test
+	public void testStackIsValidMove(){
+		stack.push(black_K);
+		assertTrue(col.isValidMove(stack));
 		
-		assertNotNull(Column.class);
+		stack.pop();
+		stack.push(red_Q);
+		assertFalse(col.isValidMove(stack));
+		
+		col.push(black_K);
+		assertTrue(col.isValidMove(stack));
+		
 	}
-  @Test
-	public void test_instantiation() throws Exception {
+	
+	@Test
+	public void testPush(){
+		assertEquals(col.push(black_K), black_K);
+		col.push(black_K);
+		assertNull(col.push(black_Q));
+		assertNull(col.push(red_10));
+	}
+	
+	@Test
+	public void testIsValidMove(){
+		assertTrue(col.isValidMove(black_K));
+		col.push(black_K);
+		assertTrue(col.isValidMove(red_Q));
+		col.push(red_Q);
+		assertTrue(col.isValidMove(black_J));
+		col.push(black_J);
+		assertTrue(col.isValidMove(red_10));
+		col.push(red_10);
 		
-		Column target = new Column();
-		assertNotNull(target);
+		assertFalse(col.isValidMove(black_K));
+		assertFalse(col.isValidMove(red_10));
+		
+	}
+	
+	@BeforeMethod
+	@BeforeClass
+	public void setUp() throws Exception {
+		black_K = new Card("Spades", 13, 1, 1);
+		black_J = new Card("Spades", 11, 1, 2);
+		red_Q = new Card("Hearts", 12, 1, 3);
+		red_10 = new Card("Diamonds", 10, 1, 4);
+		black_Q = new Card("Clubs", 12, 1, 5);
+		col = new Column();
+		stack = new CardStack();
+		
 	}
 
-  @Test
-  public void isValidMoveCard() throws Exception {
+	@AfterMethod
+	@AfterClass
+	public void tearDown() throws Exception {
 		
-		Column target = new Column();
-		Object card = null;
-		boolean actual = target.isValidMove(card);
-		boolean expected = false;
-		assertEquals(expected, actual);
-  }
+		black_K = null;
+		black_J = null;
+		red_Q = null;
+		red_10 = null;
+		black_Q = null;
+		col = null;
+		stack = null;
+		
+	}
 
-  @Test
-  public void isValidMoveCardStack() throws Exception {
-		
-		Column target = new Column();
-		Object stack = null;
-		boolean actual = target.isValidMove(stack);
-		boolean expected = false;
-		assertEquals(expected, actual);
-  }
-
-  @Test
-  public void push() throws Exception {
-		
-		Column target = new Column();
-		Object card = null;
-		Object actual = target.push(card);
-		Object expected = null;
-		assertEquals(expected, actual);
-  }
 
 }
