@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="test.AcePileTest"/>
+      <class name="test.CardStackTest"/>
+      <class name="test.CardTest"/>
+      <class name="test.ChangeAppearanceTest"/>
+      <class name="test.ChangeOptionsTest"/>
+      <class name="test.ColumnTest"/>
+      <class name="test.DealDeckTest"/>
+      <class name="test.DeckTest"/>
+      <class name="test.DiscardPileTest"/>
+      <class name="test.FireworksDisplayTest"/>
+      <class name="test.FourRowSolitaireTest"/>
+      <class name="test.SingleCellTest"/>
+      <class name="test.SolitaireBoardTest"/>
+      <class name="test.SolitaireLayoutTest"/>
+      <class name="test.SoolitairePanelTest"/>
+      <class name="test.WinScreenTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

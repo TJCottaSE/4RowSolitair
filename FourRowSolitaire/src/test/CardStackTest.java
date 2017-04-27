@@ -1,15 +1,15 @@
 package test;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
+
 import static org.testng.Assert.assertNotEquals;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertNull;
 import static org.testng.Assert.assertTrue;
+
+
+import org.testng.annotations.*;
+
 
 import FourRowSolitaire.Card;
 import FourRowSolitaire.CardStack;
@@ -19,7 +19,8 @@ public class CardStackTest {
 	CardStack stack = null;
 	Card black_5, red_4, black_3, red_2;
 	
-	@BeforeMethod
+
+	@BeforeClass
 	public void setUp() throws Exception {
 		stack = new CardStack();
 		black_5 = new Card("Spades", 5, 1, 1);
@@ -28,7 +29,7 @@ public class CardStackTest {
 		red_2 = new Card("Diamonds", 2, 1, 4);
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void tearDown() throws Exception {
 		stack = null;
 	}
@@ -71,7 +72,6 @@ public class CardStackTest {
 
 	@Test
 	public void testPopCardStack() {
-		
 		stack.push(black_3);
 		stack.push(red_2);
 		
@@ -81,8 +81,6 @@ public class CardStackTest {
 		
 		// compares top card of popped stack and expected reversal
 		assertTrue(stack.pop(stack).pop().equals(reverse.pop()));
-		
-		
 	}
 
 	@Test
