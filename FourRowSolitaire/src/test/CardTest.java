@@ -1,10 +1,12 @@
 package test;
 
-import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import FourRowSolitaire.Card;
 
@@ -14,7 +16,7 @@ public class CardTest {
 	Card card3 = null;
 	Card card4 = null;
 	
-	@Before
+	@BeforeClass
 	public void setUp() throws Exception {
 		card1 = new Card("Spades", 1, 1, 1);
 		card2 = new Card("Clubs", 1, 1, 13);
@@ -22,7 +24,7 @@ public class CardTest {
 		card4 = new Card("Diamonds", 1, 1, 39);
 	}
 
-	@After
+	@AfterClass
 	public void tearDown() throws Exception {
 	}
 
