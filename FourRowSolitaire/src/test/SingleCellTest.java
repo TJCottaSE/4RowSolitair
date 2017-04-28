@@ -1,5 +1,8 @@
 package test;
-
+/**
+ * This test class tests the SingleCell class
+ * @author Tony Cotta
+ */
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 
@@ -25,8 +28,14 @@ public class SingleCellTest {
 
 	@AfterClass
 	public void tearDown() throws Exception {
+		sc = null;
+		card1 = null;
+		card2 = null;
 	}
 
+	/**
+	 * Test pushing a card into a single cell.
+	 */
 	@Test
 	public void testPushCard() {
 		sc.push(card1);
@@ -34,12 +43,20 @@ public class SingleCellTest {
 		AssertJUnit.assertNull(sc.push(card2));
 	}
 
+	/**
+	 * Test getting a card at a location using a 
+	 * point as the frame of reference.
+	 */
 	@Test
 	public void testGetCardAtLocationPoint() {
 		sc.push(card1);
 		AssertJUnit.assertEquals(card1, sc.getCardAtLocation(0));
 	}
 
+	/**
+	 * Test to see if moving to a single cell 
+	 * will be a valid move or not.
+	 */
 	@Test
 	public void testIsValidMoveCard() {
 		AssertJUnit.assertTrue(sc.isValidMove(card1));
@@ -47,6 +64,10 @@ public class SingleCellTest {
 		AssertJUnit.assertFalse(sc.isValidMove(card1));
 	}
 
+	/**
+	 * Verifies that a stack of cards cannot be moved 
+	 * to a single cell.
+	 */
 	@Test
 	public void testIsValidMoveCardStack() {
 		CardStack stack = new CardStack();

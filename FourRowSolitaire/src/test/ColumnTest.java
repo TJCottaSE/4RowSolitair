@@ -1,5 +1,8 @@
 package test;
-
+/**
+ * Test the column class for defects
+ * @author Nolan Miller, Tony Cotta
+ */
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -77,9 +80,25 @@ public class ColumnTest{
 		col.push(red_10);
 		
 		assertFalse(col.isValidMove(black_K));
-		assertFalse(col.isValidMove(red_10));
-		
+		assertFalse(col.isValidMove(red_10));	
 	}
 	
+	/**
+	 * Test getting the available cards in the column
+	 */
+	@Test
+	public void testGetAvailableCards(){
+		Card card1 = new Card("Spades", 1, 1, 1);
+		Card card2 = new Card("Spades", 2, 1, 2);
+		Card card3 = new Card("Spades", 3, 1, 3);
+		Card card4 = new Card("Hearts", 10, 1, 40);
+		col.addCard(card1);
+		col.addCard(card2);
+		col.addCard(card3);
+		col.addCard(card4);
+		
+		CardStack newStack = col.getAvailableCards();
+		assertEquals(newStack.pop().getFullNumber(), card4.getFullNumber());
+	}
 }
 
