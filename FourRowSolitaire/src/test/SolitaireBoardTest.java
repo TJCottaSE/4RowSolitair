@@ -23,19 +23,13 @@ public class SolitaireBoardTest  extends TestNG {
   }
 
   @Test
-  public void SolitaireBoard(){
-	  throw new RuntimeException("Test not implemented");
-  }
-  @Test
-	public void test_type() throws Exception {
+  public void SolitaireBoard()throws Exception {
 		assertNotNull(SolitaireBoard.class);
-	}
-  @Test
-	public void test_instantiation() throws Exception {
 		SolitaireBoard target = new SolitaireBoard();
 		assertNotNull(target);
+  
 	}
-
+ 
   @Test
   public void clearBoard() {
 	  throw new RuntimeException("Test not implemented");
