@@ -3,19 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.CardStackTest">
+      <class name="test.ColumnTest">
         <methods>
-          <include name="testPopCardStack"/>
-          <include name="testGetCardAtLocationIntIndex"/>
-          <include name="testGetCardAtLocationPoint"/>
-          <include name="testAddStack"/>
-          <include name="testGetStackInt"/>
-          <include name="testIsEmpty"/>
-          <include name="testLength"/>
-          <include name="setUp"/>
+          <include name="testPush"/>
           <include name="tearDown"/>
+          <include name="testStackIsValidMove"/>
+          <include name="testIsValidMove"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- test.CardStackTest -->
+      </class> <!-- test.ColumnTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -56,7 +56,7 @@ public class DeckTest {
 		Deck target = new Deck(deckNumber);
 		LinkedList<Object> actual = target.getDeck();
 		LinkedList<Object> expected = null;
-		assertThat(actual, is(equalTo(expected)));
+		assertTrue(actual.equals(expected)));
   }
 
   @Test
@@ -67,7 +67,7 @@ public class DeckTest {
 		LinkedList<Integer> numbers = null;
 		LinkedList<Object> actual = target.getDeck(numbers);
 		LinkedList<Object> expected = null;
-		assertThat(actual, is(equalTo(expected)));
+		assertThat(actual, is(equals(expected)));
   }
 
   @Test

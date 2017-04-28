@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.ChangeAppearanceTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="setup"/>
+          <include name="actionPerformed"/>
+          <include name="ChangeAppearance"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="test_instantiation"/>
+        </methods>
+      </class> <!-- test.ChangeAppearanceTest -->
+      <class name="test.DealDeckTest">
+        <methods>
+          <include name="setDrawCount"/>
+          <include name="undone"/>
+          <include name="reset"/>
+          <include name="setDeckThroughs"/>
+          <include name="getDeckThroughs"/>
+          <include name="beforeClass"/>
+          <include name="isValidMoveCard"/>
+          <include name="pop"/>
+          <include name="setDifficulty"/>
+          <include name="undoPop"/>
+          <include name="hasDealsLeft"/>
+          <include name="DealDeck"/>
+          <include name="getCardAtLocation"/>
+          <include name="setDeck"/>
+          <include name="afterClass"/>
+          <include name="isValidMoveCardStack"/>
+        </methods>
+      </class> <!-- test.DealDeckTest -->
+      <class name="test.FourRowSolitaireTest">
+        <methods>
+          <include name="FourRowSolitaire"/>
+          <include name="actionPerformed"/>
+          <include name="checkForUpdate"/>
+          <include name="beforeClass"/>
+          <include name="loadData"/>
+          <include name="test_actionPerformed_A$ActionEvent"/>
+          <include name="main"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.FourRowSolitaireTest -->
+      <class name="test.DeckTest">
+        <methods>
+          <include name="getDeck"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="Deck"/>
+          <include name="getDeckLinkedListInteger"/>
+          <include name="instantiation"/>
+          <include name="type"/>
+          <include name="createCard"/>
+        </methods>
+      </class> <!-- test.DeckTest -->
+      <class name="test.CardStackTest">
+        <methods>
+          <include name="testGetStackInt"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.CardStackTest -->
+      <class name="test.ChangeOptionsTest">
+        <methods>
+          <include name="getTimer"/>
+          <include name="setup"/>
+          <include name="getSounds"/>
+          <include name="afterClass"/>
+          <include name="getDifficulty"/>
+          <include name="actionPerformed"/>
+          <include name="test_actionPerformed_A$ActionEvent"/>
+          <include name="ChangeOptions"/>
+          <include name="beforeClass"/>
+          <include name="getDrawCount"/>
+          <include name="getAnimation"/>
+        </methods>
+      </class> <!-- test.ChangeOptionsTest -->
+      <class name="test.DiscardPileTest">
+        <methods>
+          <include name="pop"/>
+          <include name="test_isValidMove_Object"/>
+          <include name="test_pop_A$"/>
+          <include name="afterClass"/>
+          <include name="addCard"/>
+          <include name="pushCardStack"/>
+          <include name="pushCard"/>
+          <include name="test_undoPop_A$"/>
+          <include name="test_addCard_A$Object"/>
+          <include name="test_push_A$Object"/>
+          <include name="test_push_Object"/>
+          <include name="setView"/>
+          <include name="isValidMoveCard"/>
+          <include name="test_addStack_A$Object"/>
+          <include name="DiscardPile"/>
+          <include name="test_isValidMove_A$Object"/>
+          <include name="getCardAtLocation"/>
+          <include name="addStack"/>
+          <include name="undoPop"/>
+          <include name="beforeClass"/>
+          <include name="paint"/>
+          <include name="isValidMoveCardStack"/>
+          <include name="setDrawCount"/>
+          <include name="getNumViewableCards"/>
+        </methods>
+      </class> <!-- test.DiscardPileTest -->
+      <class name="test.FireworksDisplayTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="restartDisplay"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test.FireworksDisplayTest -->
+      <class name="test.SingleCellTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testIsValidMoveCard"/>
+        </methods>
+      </class> <!-- test.SingleCellTest -->
+      <class name="test.SolitaireBoardTest">
+        <methods>
+          <include name="getDeckNumber"/>
+          <include name="setDeckNumber"/>
+          <include name="getBackgroundNumber"/>
+          <include name="setNewDifficulty"/>
+          <include name="getWinAnimationStatus"/>
+          <include name="getHint"/>
+          <include name="setNewDrawCount"/>
+          <include name="recordGame"/>
+          <include name="getDifficulty"/>
+          <include name="setBackgroundNumber"/>
+          <include name="clearBoard"/>
+          <include name="SolitaireBoard"/>
+          <include name="getNewDifficulty"/>
+          <include name="getWinSoundsStatus"/>
+          <include name="dealOutCustomBoard"/>
+          <include name="getNewDrawCount"/>
+          <include name="getDrawCount"/>
+          <include name="setDrawCount"/>
+          <include name="afterClass"/>
+          <include name="setAppearance"/>
+          <include name="setWinSoundsStatus"/>
+          <include name="beforeClass"/>
+          <include name="newGame"/>
+          <include name="setWinAnimationStatus"/>
+          <include name="dealOutBoard"/>
+          <include name="setDifficulty"/>
+        </methods>
+      </class> <!-- test.SolitaireBoardTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

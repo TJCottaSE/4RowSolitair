@@ -1,53 +1,35 @@
 package test;
+/**
+ * Test methods for Solitaire Panel.
+ * @author Tony Cotta
+ */
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 
-import static org.testng.Assert.assertNotNull;
+import javax.swing.*;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import FourRowSolitaire.SolitairePanel;
 
-public class SolitairePanelTest {
+public class SolitairePanelTest extends JPanel {
 
-  @BeforeClass
-  public void beforeClass() {
+	/**
+	 * This test method ensures that a solitaire panel object
+	 * can be instantiated, and that the changing of the background
+	 * images works when a call to change background is made
+	 * @throws Exception
+	 */
+	@Test
+	public void SolitairePanel() throws Exception {
+
+		SolitairePanel panel1 = new SolitairePanel();
+		SolitairePanel panel2 = new SolitairePanel();
+		assertEquals(panel1.getBackGroundNumber(), panel2.getBackGroundNumber());
+		panel2.changeBackground(1);
+		assertNotEquals(panel1.getBackGroundNumber(), panel2.getBackGroundNumber());
+
   }
 
-  @AfterClass
-  public void afterClass() {
-  }
-
-  @Test
-  public void SolitairePanel() {
-    throw new RuntimeException("Test not implemented");
-  }
-  
-  public void test_type() throws Exception 
-  {
-	  assertNotNull(SolitairePanel.class);
-  }
-  
-  public void test_instantiation() throws Exception 
-  {
-	  SolitairePanel target = new SolitairePanel();
-	  assertNotNull(target);
-  }
-
-
-  @Test
-  public void changeBackground() throws Exception 
-  {
-	  SolitairePanel target = new SolitairePanel();
-	  int back = 0;
-	  target.changeBackground(back);
-  }
-
-  /**@Test
-  public void paintComponent() throws Exception 
-  {
-	  SolitairePanel target = new SolitairePanel();
-	  Graphics g = null;
-	  target.paintComponent(g);
-  }*/
 }
+

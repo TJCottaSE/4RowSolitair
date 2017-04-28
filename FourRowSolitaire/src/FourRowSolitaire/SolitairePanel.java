@@ -58,6 +58,10 @@ public class SolitairePanel extends JPanel
 
         repaint();
     }
+    
+    public int getBackGroundNumber(){
+    	return backgroundNumber;
+    }
 
     protected void paintComponent(Graphics g)
     {
