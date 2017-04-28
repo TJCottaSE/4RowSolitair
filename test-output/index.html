@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.ColumnTest" hash-for-method="testGetAvailableCards">testGetAvailableCards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.ColumnTest" hash-for-method="testIsValidMove">testIsValidMove</a> <!-- method navigator-link -->
@@ -135,6 +140,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testGetAvailableCards">
+                  </a> <!-- testGetAvailableCards -->
+                  <span class="method-name">testGetAvailableCards</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testIsValidMove">
                   </a> <!-- testIsValidMove -->
                   <span class="method-name">testIsValidMove</span>
@@ -159,7 +171,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/3d/r_2hk6v504v171knf21r877c0000gn/T/testng-eclipse-1782660510/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/3d/r_2hk6v504v171knf21r877c0000gn/T/testng-eclipse-770792592/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,24 +220,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testIsValidMove')
+data.setCell(0, 1, 'testGetAvailableCards')
 data.setCell(0, 2, 'test.ColumnTest')
-data.setCell(0, 3, 162);
+data.setCell(0, 3, 985);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testPush')
 data.setCell(1, 2, 'test.ColumnTest')
-data.setCell(1, 3, 10);
+data.setCell(1, 3, 140);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testStackIsValidMove')
+data.setCell(2, 1, 'testIsValidMove')
 data.setCell(2, 2, 'test.ColumnTest')
-data.setCell(2, 3, 2);
+data.setCell(2, 3, 32);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testStackIsValidMove')
+data.setCell(3, 2, 'test.ColumnTest')
+data.setCell(3, 3, 9);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 174 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -256,45 +272,25 @@ return data;
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">513 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetAvailableCards</span>
+                <span class="method-start">133 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testIsValidMove</span>
-                <span class="method-start">524 ms</span>
+                <span class="method-start">1161 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">688 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">689 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPush</span>
-                <span class="method-start">729 ms</span>
+                <span class="method-start">1199 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">744 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">744 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testStackIsValidMove</span>
-                <span class="method-start">774 ms</span>
+                <span class="method-start">1341 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">778 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">778 ms</span>
+                <span class="method-start">1352 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

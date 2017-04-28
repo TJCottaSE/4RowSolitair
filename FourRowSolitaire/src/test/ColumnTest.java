@@ -18,19 +18,13 @@ import FourRowSolitaire.CardStack;
 import FourRowSolitaire.Column;
 
 public class ColumnTest{
+	
 	Card black_K, black_Q, red_Q, black_J, red_10;
 	CardStack stack;
 	Column col;
 	
 	@BeforeClass
 	public void setUp() throws Exception {
-		black_K = new Card("Spades", 13, 1, 1);
-		black_J = new Card("Spades", 11, 1, 2);
-		red_Q = new Card("Hearts", 12, 1, 3);
-		red_10 = new Card("Diamonds", 10, 1, 4);
-		black_Q = new Card("Clubs", 12, 1, 5);
-		col = new Column();
-		stack = new CardStack();
 		
 	}
 
@@ -45,10 +39,19 @@ public class ColumnTest{
 		stack = null;
 	}
 
-
+	/**
+	 * Test whether a stack to a column is a valid move, compares top card
+	 */
 	@Test
 	public void testStackIsValidMove(){
+		
+		black_K = new Card("Spades", 13, 1, 1);
+		red_Q = new Card("Hearts", 12, 1, 3);
+		col = new Column();
+		stack = new CardStack();
+		
 		stack.push(black_K);
+		
 		assertTrue(col.isValidMove(stack));
 		
 		stack.pop();
@@ -60,16 +63,38 @@ public class ColumnTest{
 		
 	}
 	
+	/**
+	 * Tests push method, whether or not a card can go to a column
+	 */
 	@Test
 	public void testPush(){
+		
+		black_K = new Card("Spades", 13, 1, 1);
+		red_Q = new Card("Hearts", 12, 1, 3);
+		red_10 = new Card("Diamonds", 10, 1, 4);
+		black_Q = new Card("Clubs", 12, 1, 5);
+		col = new Column();
+		stack = new CardStack();
+		
 		assertEquals(col.push(black_K), black_K);
 		col.push(black_K);
 		assertNull(col.push(black_Q));
 		assertNull(col.push(red_10));
+		assertEquals(col.push(red_Q), red_Q);
 	}
 	
+	/**
+	 * Test if a card to column is a valid move
+	 */
 	@Test
 	public void testIsValidMove(){
+		black_K = new Card("Spades", 13, 1, 1);
+		black_J = new Card("Spades", 11, 1, 2);
+		red_Q = new Card("Hearts", 12, 1, 3);
+		red_10 = new Card("Diamonds", 10, 1, 4);
+		col = new Column();
+		stack = new CardStack();
+		
 		assertTrue(col.isValidMove(black_K));
 		col.push(black_K);
 		assertTrue(col.isValidMove(red_Q));
@@ -88,6 +113,7 @@ public class ColumnTest{
 	 */
 	@Test
 	public void testGetAvailableCards(){
+		col = new Column();
 		Card card1 = new Card("Spades", 1, 1, 1);
 		Card card2 = new Card("Spades", 2, 1, 2);
 		Card card3 = new Card("Spades", 3, 1, 3);
