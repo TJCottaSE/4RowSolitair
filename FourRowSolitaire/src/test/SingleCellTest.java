@@ -1,9 +1,11 @@
 package test;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
 import FourRowSolitaire.Card;
 import FourRowSolitaire.CardStack;
 import FourRowSolitaire.SingleCell;
@@ -13,15 +15,15 @@ public class SingleCellTest {
 	SingleCell sc = null;
 	Card card1 = null;
 	Card card2 = null;
-	
-	@BeforeMethod
+
+	@BeforeClass
 	public void setUp() throws Exception {
 		sc = new SingleCell();
 		card1 = new Card("Spades", 1, 1, 1);
 		card2 = new Card("Spades", 13, 1, 13);
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void tearDown() throws Exception {
 	}
 

@@ -1,9 +1,12 @@
 package test;
 
-import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
 import FourRowSolitaire.Card;
 
 public class CardTest {
@@ -11,8 +14,8 @@ public class CardTest {
 	Card card2 = null;
 	Card card3 = null;
 	Card card4 = null;
-	
-	@BeforeMethod
+
+	@BeforeClass
 	public void setUp() throws Exception {
 		card1 = new Card("Spades", 1, 1, 1);
 		card2 = new Card("Clubs", 1, 1, 13);
@@ -20,7 +23,7 @@ public class CardTest {
 		card4 = new Card("Diamonds", 1, 1, 39);
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void tearDown() throws Exception {
 	}
 

@@ -7,9 +7,8 @@ import org.testng.AssertJUnit;
 import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
-
-import org.testng.annotations.*;
-
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import FourRowSolitaire.Card;
 import FourRowSolitaire.CardStack;
@@ -19,7 +18,6 @@ public class CardStackTest {
 	CardStack stack = null;
 	Card black_5, red_4, black_3, red_2;
 	
-
 	@BeforeClass
 	public void setUp() throws Exception {
 		stack = new CardStack();
