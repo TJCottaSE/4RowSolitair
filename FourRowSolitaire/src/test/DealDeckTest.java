@@ -1,4 +1,8 @@
 package test;
+/**
+ * Test the DealDeck Class
+ * @author Nolan Miller
+ */
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
@@ -18,140 +22,242 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import FourRowSolitaire.Card;
+import FourRowSolitaire.CardStack;
 import FourRowSolitaire.DealDeck;
+import FourRowSolitaire.DiscardPile;
 
 public class DealDeckTest {
+	
+	DealDeck deck;
+	DiscardPile discard1, discard2;
+	Card card1, card2, card3, card4;
+	LinkedList<Card> cardList;
 
-  @BeforeClass
+  @BeforeMethod
   public void beforeClass() {
+	  
+	  card1 = new Card("Spades", 3, 1, 1);
+	  card2 = new Card("Clubs", 1, 1, 13);
+	  card3 = new Card("Hearts", 1, 1, 26);
+	  card4 = new Card("Diamonds", 3, 1, 39);
+	  
+	  cardList = new LinkedList<Card>();
+	  cardList.add(card1);
+	  cardList.add(card2);
+	  cardList.add(card3);
+	  cardList.add(card4);
+	  
+	  discard1 = new DiscardPile(1);
+	  discard2 = new DiscardPile(1);
+	  deck = new DealDeck(discard1, 1);
   }
 
-  @AfterClass
+  @AfterMethod
   public void afterClass() {
   }
 
+  /**
+   * Test constructor
+   */
   @Test
   public void DealDeck() {
-    throw new RuntimeException("Test not implemented");
+
+    DealDeck deck1 = new DealDeck(discard1, 3);
+    DealDeck deck2 = new DealDeck(discard2, 1);
+    
+    assertNotNull(deck1);
+    assertNotNull(deck2);
+    
   }
 
   @Test
   public void getCardAtLocation() throws Exception {
 		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		Point p = null;
-		Object actual = target.getCardAtLocation(p);
-		Object expected = null;
-		assertEquals(expected, actual);
   }
 
+  /**
+   * Test getDeckThroughs method
+   * tests amount set by constructor, and amount
+   * after being changed by setDeckThroughs(int)
+   */
   @Test
   public void getDeckThroughs() {
-    throw new RuntimeException("Test not implemented");
+	  
+	  assertEquals(deck.getDeckThroughs(), 1);
+	  deck.setDeckThroughs(3);
+	  assertEquals(deck.getDeckThroughs(), 3);
+	  
   }
 
+  /**
+   * Test hasDealsLeft 
+   * compares numTimesThroughDeck to deckThroughLimit
+   * runs through deals, and checks that dealsleft hits 0
+   * 
+   */
   @Test
   public void hasDealsLeft() throws Exception {
+		deck.setDeck(cardList);
+		assertEquals(deck.hasDealsLeft(), true);
 		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		boolean actual = target.hasDealsLeft();
-		boolean expected = false;
-		assertEquals(expected, actual);
+		while(deck.hasDealsLeft())
+			deck.pop();
+		
+		assertEquals(deck.hasDealsLeft(), false);
   }
 
   @Test
-  public void isValidMoveCard() throws Exception {
+  public void isValidMoveCard() throws Exception {			/* CardStack isValidMove(Card) has error */ 
+	  
+	  Card black_2, red_2;
+	  black_2 = new Card("Spades", 2, 1, 2);
+	  red_2 = new  Card("Diamonds", 2, 1, 3);
+	  
+	  deck.setDeck(cardList);
+	  assertEquals(deck.isValidMove(red_2), false);	  
+	  assertEquals(deck.isValidMove(black_2), true);
+	  
 		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		Object card = null;
-		boolean actual = target.isValidMove(card);
-		boolean expected = false;
-		assertEquals(expected, actual);
   }
 
   @Test
-  public void isValidMoveCardStack() throws Exception {
-		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		Object stack = null;
-		boolean actual = target.isValidMove(stack);
-		boolean expected = false;
-		assertEquals(expected, actual);
-  }
-
-  @Test
-  public void pop() throws Exception {
-		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		Object actual = target.pop();
-		Object expected = null;
-		assertEquals(expected, actual);
-  }
-
-  @Test
-  public void reset() throws Exception {
-		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		target.reset();
+  public void isValidMoveCardStack() throws Exception {		/* CardStack isValidMove(CardStack) has error */
+	  
+	  DealDeck testDeck = new DealDeck(discard2, 1);
+	  LinkedList<Card> testList = new LinkedList<Card>();
+	  CardStack stack = new CardStack();
+	  
+	  Card black_2, red_3, black_4, red_5;
+	  
+	  black_2 = new Card("Spades", 2, 1, 2);
+	  red_3 = new  Card("Diamonds", 3, 1, 3);
+	  black_4 = new Card("Clubs", 4, 1, 4);
+	  red_5 = new Card("Hearts", 5, 1, 5);
+	  
+	  testList.add(red_5);
+	  testList.add(black_4);
+	  
+	  testDeck.setDeck(testList);
+	  
+	  stack.push(red_3);
+	  stack.push(black_2);
+	  
+	  assertEquals(testDeck.isValidMove(stack), true);
+	  
 	
   }
 
+  /**
+   * Test pop method with deckthroughs and cardlist
+   *
+   */
   @Test
-  public void setDeck() throws Exception {
+  public void pop() throws Exception {
+	  	// pop first card
+		deck.setDeck(cardList);
+		assertEquals(deck.pop(), card4);
 		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		LinkedList<Object> cards = null;
-		target.setDeck(cards);
+		// change draw count and draw card
+		deck.setDrawCount(2);
+		assertEquals(deck.pop(), card2);
+		
+		// end of deck
+		deck.pop();
+		assertEquals(deck.pop(), null);
+		
+		// reach through limit
+		deck.pop();
+		deck.pop();
+		assertEquals(deck.pop(), null);
   }
 
+  /**
+   * Tests resetting deck throughs
+   * sets it at a number, calls reset, and checks that
+   * it is reset to 1
+   */
+  @Test
+  public void reset() throws Exception {
+	  
+	  deck.setDeckThroughs(4);
+	  assertEquals(deck.getDeckThroughs(), 4);
+	  deck.reset();
+	  assertEquals(deck.getDeckThroughs(), 1);
+		
+  }
+
+  /**
+   * Tests set deck
+   * Creates a linked list of cards and 
+   * verifies that they are at the expected position
+   *
+   */
+  @Test
+  public void setDeck() throws Exception {
+	  
+	  deck.setDeck(cardList);
+	  assertEquals(deck.getCardAtLocation(0), card1);
+	  assertEquals(deck.getCardAtLocation(1), card2);
+	  assertEquals(deck.getCardAtLocation(2), card3);
+	  assertEquals(deck.getCardAtLocation(3), card4);
+	  assertEquals(deck.length(), 4);
+		
+  }
+
+  /**
+   * Test ability to change deck throughs
+   *
+   */
   @Test
   public void setDeckThroughs() throws Exception {
-		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		int actual = target.getDeckThroughs();
-		int expected = 0;
-		assertEquals(expected, actual);
+		assertEquals(deck.getDeckThroughs(), 1);
+		deck.setDeckThroughs(4);
+		assertEquals(deck.getDeckThroughs(), 4);
   }
   
 
   @Test
   public void setDifficulty() {
-    throw new RuntimeException("Test not implemented");
+	  deck.setDifficulty(1);
+	  
   }
 
+  /** 
+   * Test that pop will pop number of cards indicated by draw count
+   */
   @Test
   public void setDrawCount() {
-    throw new RuntimeException("Test not implemented");
+	  deck.setDrawCount(1);
+	  deck.setDeck(cardList);
+	  
+	  // pops one card
+	  assertEquals(deck.pop(), card4);
+	  deck.setDrawCount(3);
+	  // pops 3 cards
+	  assertEquals(deck.pop(), card1);
   }
 
+  /**
+   * Test undoPop
+   *
+   */
   @Test
   public void undoPop() throws Exception {
+		deck.setDeck(cardList);
 		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		target.undoPop();
-  }
-
-  @Test
-  public void undone() {
-    throw new RuntimeException("Test not implemented");
+		// pop top card
+		deck.undoPop();
+		assertEquals(deck.getDeckThroughs(), 0);
+		
+		// use up deals
+		while(deck.hasDealsLeft()){
+			deck.pop();
+		}
+		
+		assertEquals(deck.hasDealsLeft(), false);
+		deck.undoPop();
+		assertEquals(deck.hasDealsLeft(), true);
   }
  
 }
