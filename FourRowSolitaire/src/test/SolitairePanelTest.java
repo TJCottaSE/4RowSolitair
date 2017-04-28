@@ -5,7 +5,10 @@ import static org.testng.Assert.assertNull;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.lang.reflect.Method;
+import java.net.URL;
+import javax.swing.*;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -13,7 +16,7 @@ import org.testng.annotations.Test;
 
 import FourRowSolitaire.SolitairePanel;
 
-public class SolitairePanelTest {
+public class SolitairePanelTest extends JPanel {
 
 
   @BeforeClass
@@ -26,21 +29,12 @@ public class SolitairePanelTest {
   }
 
   @Test
-  public void SolitairePanel() {
-    throw new RuntimeException("Test not implemented");
-  }
-  
-  @Test
-  public void test_type() throws Exception 
-  {
+  public void SolitairePanel() throws Exception {
+
 	  assertNotNull(SolitairePanel.class);
-  }
-  
-  @Test
-  public void test_instantiation() throws Exception 
-  {
 	  SolitairePanel target = new SolitairePanel();
 	  assertNotNull(target);
+
   }
 
   @Test
@@ -49,6 +43,8 @@ public class SolitairePanelTest {
 	  SolitairePanel target = new SolitairePanel();
 	  int back = 0;
 	  target.changeBackground(back);
+	  int back1 = 1;
+	  target.changeBackground(back1);
   }
 
   
@@ -56,7 +52,7 @@ public class SolitairePanelTest {
   public void paintComponent() throws Exception 
   {
 	  SolitairePanel target = new SolitairePanel();
-	  Graphics g = null;
+	  Graphics g;
 	  target.paintComponent(g);
 	  assertNotNull(target);    
   }
