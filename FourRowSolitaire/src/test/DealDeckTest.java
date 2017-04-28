@@ -34,20 +34,6 @@ public class DealDeckTest {
   public void DealDeck() {
     throw new RuntimeException("Test not implemented");
   }
-  
-  @Test
-	public void test_type() throws Exception {
-		
-		assertNotNull(DealDeck.class);
-	}
-  @Test
-	public void test_instantiation() throws Exception {
-		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		assertNotNull(target);
-	}
 
   @Test
   public void getCardAtLocation() throws Exception {
@@ -102,16 +88,6 @@ public class DealDeckTest {
   }
 
   @Test
-  public void paint() throws Exception {
-		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		Graphics g = null;
-		target.paint(g);
-  }
-
-  @Test
   public void pop() throws Exception {
 		
 		Object discard = null;
@@ -153,15 +129,6 @@ public class DealDeckTest {
 		assertEquals(expected, actual);
   }
   
-  @Test
-  public void test_setDeckThroughsint() throws Exception {
-		
-		Object discard = null;
-		int drawCount = 0;
-		DealDeck target = new DealDeck(discard, drawCount);
-		int throughs = 0;
-		target.setDeckThroughs(throughs);
-  }
 
   @Test
   public void setDifficulty() {

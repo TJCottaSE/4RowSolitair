@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="809" started-at="2017-04-27T15:45:24Z" finished-at="2017-04-27T15:45:25Z">
+  <suite name="Default suite" duration-ms="721" started-at="2017-04-28T14:08:44Z" finished-at="2017-04-28T14:08:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="809" started-at="2017-04-27T15:45:24Z" finished-at="2017-04-27T15:45:25Z">
+    <test name="Default test" duration-ms="721" started-at="2017-04-28T14:08:44Z" finished-at="2017-04-28T14:08:45Z">
       <class name="test.ColumnTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@332820f4]" name="setUp" is-config="true" duration-ms="498" started-at="2017-04-27T10:45:24Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="494" started-at="2017-04-28T09:08:44Z" finished-at="2017-04-28T09:08:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@332820f4]" name="setUp" is-config="true" duration-ms="11" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="testGetAvailableCards()[pri:0, instance:test.ColumnTest@fb6097b]" name="testGetAvailableCards" duration-ms="117" started-at="2017-04-28T09:08:44Z" finished-at="2017-04-28T09:08:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAvailableCards -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="20" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testIsValidMove()[pri:0, instance:test.ColumnTest@332820f4]" name="testIsValidMove" duration-ms="162" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testIsValidMove()[pri:0, instance:test.ColumnTest@fb6097b]" name="testIsValidMove" duration-ms="1" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsValidMove -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@332820f4]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@332820f4]" name="setUp" is-config="true" duration-ms="40" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="9" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testPush()[pri:0, instance:test.ColumnTest@332820f4]" name="testPush" duration-ms="10" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="testPush()[pri:0, instance:test.ColumnTest@fb6097b]" name="testPush" duration-ms="2" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPush -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@332820f4]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@332820f4]" name="setUp" is-config="true" duration-ms="30" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="10" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testStackIsValidMove()[pri:0, instance:test.ColumnTest@332820f4]" name="testStackIsValidMove" duration-ms="2" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="testStackIsValidMove()[pri:0, instance:test.ColumnTest@fb6097b]" name="testStackIsValidMove" duration-ms="2" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStackIsValidMove -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@332820f4]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@332820f4]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-27T10:45:25Z" finished-at="2017-04-27T10:45:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
