@@ -31,9 +31,14 @@ public class WinScreenTest extends TestNG {
   {
 	  int animation = 0;
 	  int sounds = 0;
+	  int animation1 = 1;
+	  int sounds1 = 1;
 	  WinScreen target = new WinScreen(animation, sounds);
+	  WinScreen target1 = new WinScreen(animation1, sounds1);
 	  assertNotNull(target);
-  }
+	  assertNotNull(target1);
 
+  }
+ 
 }
 
