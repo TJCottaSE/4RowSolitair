@@ -4,18 +4,13 @@ package test;
  * @author Tony Cotta, Nolan Miller
  */
 import org.testng.annotations.Test;
-import org.testng.Assert;
 import org.testng.AssertJUnit;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.awt.Point;
-
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import FourRowSolitaire.Card;
