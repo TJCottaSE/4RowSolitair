@@ -1152,6 +1152,10 @@ public class SolitaireBoard extends JFrame
     {
         dealDeck.setDeckThroughs(deckThroughs);
     }
+    
+    public int getDeckThroughs() {
+    	return dealDeck.getDeckThroughs();
+    }
 
     public synchronized void undoMove()
     {
@@ -1211,7 +1215,7 @@ public class SolitaireBoard extends JFrame
                 }
                 else
                 {
-                    CardStack temp = tempDest.getStack(num);
+/*  */              CardStack temp = tempDest.undoStackMove(num);
                     tempSource.addStack(temp);
                 }
 

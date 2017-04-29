@@ -44,6 +44,10 @@ public class DiscardPile extends CardStack
     {
         drawCount = draw;
     }
+    
+    public int getDrawCount(){
+    	return drawCount;
+    }
 
     public int getNumViewableCards()
     {
