@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import FourRowSolitaire.CardStack;
 import FourRowSolitaire.SolitaireBoard;
 
 public class SolitaireBoardTest  extends TestNG {
@@ -74,8 +75,18 @@ public class SolitaireBoardTest  extends TestNG {
 
   @Test
   public void getHint() throws Exception {
+	  
+      CardStack source = new CardStack();
+      CardStack destination = new CardStack();
+      CardStack temp = new CardStack();
+
+      LinkedList<String> hints = new LinkedList<String>();
+      String sourceString = "";
+      
 	  SolitaireBoard target = new SolitaireBoard();
-	  target.getHint();
+	  int i = 0; //0-8
+	  int j = 0; // 0 - 7
+	target.getHint();
   }
 
   @Test
