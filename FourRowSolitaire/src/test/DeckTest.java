@@ -53,7 +53,7 @@ public class DeckTest {
 		Card card;
 		deck = deckClass.getDeck(numbers);
 		card = deck.get(0);
-		AssertJUnit.assertEquals(1,deckClass.getDeck().size());		
+		AssertJUnit.assertEquals(3,deckClass.getDeck().size());		
 		AssertJUnit.assertEquals(card.getSuit(),Card.SPADES_SUIT);
 	}
 	
