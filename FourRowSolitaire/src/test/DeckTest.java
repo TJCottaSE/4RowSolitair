@@ -16,7 +16,7 @@ public class DeckTest {
 	  private Deck deckClass2;
 	  private Deck deckClass3;
 	 // private Card card = new Card(null, 1, 1, 1);
-	  LinkedList<Integer> numbers = new LinkedList();
+	  LinkedList<Integer> numbers = new LinkedList(); 
 
 	@BeforeMethod
 	public void setUp() throws Exception {

@@ -25,7 +25,7 @@ public class DiscardPileTest {
 	 Card card;
 	 
 	@BeforeClass
-	public void setUp() throws Exception {
+	public void setUp() throws Exception { 
 		discardPile = new DiscardPile(drawCount);
 		card = new Card(Card.HEARTS_SUIT, cardNumber, deckNumber, fullNumber );
 		
