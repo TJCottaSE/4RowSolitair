@@ -5,6 +5,7 @@ import static org.testng.Assert.assertNotNull;
 
 import java.awt.event.ActionEvent;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import org.testng.annotations.AfterClass;
@@ -14,17 +15,24 @@ import org.testng.annotations.Test;
 import FourRowSolitaire.ChangeAppearance;
 
 public class ChangeAppearanceTest {
-	
-	JFrame parent = null;
 
+	public static final int NUM_DECKS = 3;
+	public static final int NUM_BACKGROUNDS = 3;
+
+	boolean exited = true;
+
+	JFrame parent = null;
+	
+	//int deckNumber = 5;
 	int deckNumber1 = 1;
 	int deckNumber2 = 2;
-	int deckNumber3 = 2;
-
+	int deckNumber3 = 3;
+	
+	int backgroundNumber = 5;
 	int backgroundNumber1 = 1;
 	int backgroundNumber2 = 2;
 	int backgroundNumber3 = 3;
-	
+
 	ChangeAppearance target1 = new ChangeAppearance(parent, deckNumber1, backgroundNumber1);
 	ChangeAppearance target2 = new ChangeAppearance(parent, deckNumber1, backgroundNumber2);
 	ChangeAppearance target3 = new ChangeAppearance(parent, deckNumber1, backgroundNumber3);
@@ -34,6 +42,7 @@ public class ChangeAppearanceTest {
 	ChangeAppearance target7 = new ChangeAppearance(parent, deckNumber3, backgroundNumber1);
 	ChangeAppearance target8 = new ChangeAppearance(parent, deckNumber3, backgroundNumber2);
 	ChangeAppearance target9 = new ChangeAppearance(parent, deckNumber3, backgroundNumber3);
+	ChangeAppearance target10 = new ChangeAppearance(parent, deckNumber3, backgroundNumber3);
 
   @BeforeClass
   public void beforeClass() {
@@ -57,27 +66,23 @@ public class ChangeAppearanceTest {
 		assertNotNull(target7);
 		assertNotNull(target8);
 		assertNotNull(target9);
+		assertNotNull(target10);
 
 	}
 
   @Test
   public void actionPerformed() throws Exception {
 	  
-		ActionEvent e = null;
-		
-		target1.actionPerformed(e);
-		target2.actionPerformed(e);
-		target3.actionPerformed(e);
-		target4.actionPerformed(e);
-		target5.actionPerformed(e);
-		target6.actionPerformed(e);
-		target7.actionPerformed(e);
-		target8.actionPerformed(e);
-		target9.actionPerformed(e);
-		
+	  JButton ok = new JButton("Choose This Setup");
+
+	  ActionEvent e = new ActionEvent(ok, backgroundNumber1, null, deckNumber1);
+	  ok = (JButton) e.getSource();
+	  target1.actionPerformed(e);
+	  assertNotNull(target1);
   }
 
-  @Test
+
+@Test
   public void getBackgroundNumber() throws Exception {
 
 		int actual1 = target1.getBackgroundNumber();
@@ -89,10 +94,12 @@ public class ChangeAppearanceTest {
 		int actual7 = target7.getBackgroundNumber();
 		int actual8 = target8.getBackgroundNumber();
 		int actual9 = target9.getBackgroundNumber();
-		
+		int actual10 = target10.getBackgroundNumber();
+
 		int expected1 = 1;
 		int expected2 = 2;
 		int expected3 = 3;
+		int expected4 = -1;
 
 		assertEquals(expected1, actual1);
 		assertEquals(expected2, actual2);
@@ -103,6 +110,8 @@ public class ChangeAppearanceTest {
 		assertEquals(expected1, actual7);
 		assertEquals(expected2, actual8);
 		assertEquals(expected3, actual9);
+		assertEquals(expected4, actual10);
+		
   }
 
   @Test
@@ -117,10 +126,12 @@ public class ChangeAppearanceTest {
 		int actual7 = target7.getDeckNumber();
 		int actual8 = target8.getDeckNumber();
 		int actual9 = target9.getDeckNumber();
+		int actual10 = target10.getDeckNumber();
 		
 		int expected1 = 1;
 		int expected2 = 2;
 		int expected3 = 3;
+		int expected4 = -1;
 
 		assertEquals(expected1, actual1);
 		assertEquals(expected1, actual2);
@@ -131,12 +142,14 @@ public class ChangeAppearanceTest {
 		assertEquals(expected3, actual7);
 		assertEquals(expected3, actual8);
 		assertEquals(expected3, actual9);
+		
+		assertEquals(expected4, actual10);
 
   }
 
   @Test
-  public void setup() {
-    throw new RuntimeException("Test not implemented");
+  public void setup() throws Exception {
+
   }
 
 }
