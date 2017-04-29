@@ -221,10 +221,10 @@ public class CardStackTest {
 	}
 
 	/**
-	 * Test getting a stack of cards to a specified depth
+	 * Test undoing a stack move
 	 */
 	@Test
-	public void testGetStackInt() {												/* Needs Work */
+	public void testUndoStackMove() {
 		Card card1 = new Card("Spades", 1, 1, 1);
 		Card card2 = new Card("Spades", 2, 1, 2);
 		Card card3 = new Card("Spades", 3, 1, 3);
@@ -233,7 +233,7 @@ public class CardStackTest {
 		stack.push(card2);
 		stack.push(card3);
 		stack.push(card4);
-		CardStack newStack = stack.getStack(4);
+		CardStack newStack = stack.undoStackMove(3);
 		Card c = newStack.peek();
 		AssertJUnit.assertEquals(newStack.pop().getFullNumber(), card2.getFullNumber());
 		AssertJUnit.assertEquals(newStack.pop().getFullNumber(), card3.getFullNumber());

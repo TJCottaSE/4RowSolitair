@@ -1215,7 +1215,7 @@ public class SolitaireBoard extends JFrame
                 }
                 else
                 {
-                    CardStack temp = tempDest.getStack(num);
+/*  */              CardStack temp = tempDest.undoStackMove(num);
                     tempSource.addStack(temp);
                 }
 

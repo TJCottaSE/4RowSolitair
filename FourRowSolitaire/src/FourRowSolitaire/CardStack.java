@@ -222,20 +222,6 @@ public class CardStack extends JLayeredPane
         return temp;
     }
 
-    public CardStack getStack(int numCards)
-    {
-        CardStack temp = new CardStack();
-        int index = length() - numCards;
-
-        for(int i = length(); i > index; i--)
-        {
-            temp.push(getCardAtLocation(cards.size() - i - 1).clone());
-            getCardAtLocation(cards.size() - i - 1).highlight();
-        }
-
-        return temp;
-    }
-
     public boolean isValidMove(Card card)
     {
         return false;
@@ -251,6 +237,20 @@ public class CardStack extends JLayeredPane
     	return cards.get(0);
     }
 
+    /**
+     * Added undo stack to undo a move of a column of cards at once
+     * @param numCards number of cards to move back
+     * @return the stack of cards to move back
+     */
+	public CardStack undoStackMove(int numCards){
+		CardStack temp = new CardStack();
+		for(int i = 0; i < numCards; i++)
+		{
+			temp.push(this.pop());
+		}
+		return temp;
+	}
+	
     public CardStack getAvailableCards()
     {
         if(!isEmpty() && (this instanceof Column))
