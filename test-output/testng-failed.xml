@@ -5,10 +5,9 @@
     <classes>
       <class name="test.DealDeckTest">
         <methods>
+          <include name="setDifficulty"/>
           <include name="beforeClass"/>
-          <include name="isValidMoveCard"/>
           <include name="afterClass"/>
-          <include name="isValidMoveCardStack"/>
         </methods>
       </class> <!-- test.DealDeckTest -->
     </classes>

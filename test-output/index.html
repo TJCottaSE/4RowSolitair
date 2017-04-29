@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 2 failed,   11 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.DealDeckTest" hash-for-method="isValidMoveCard">isValidMoveCard</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.DealDeckTest" hash-for-method="isValidMoveCardStack">isValidMoveCardStack</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,17 +107,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.DealDeckTest" hash-for-method="getCardAtLocation">getCardAtLocation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.DealDeckTest" hash-for-method="getDeckThroughs">getDeckThroughs</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.DealDeckTest" hash-for-method="hasDealsLeft">hasDealsLeft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.DealDeckTest" hash-for-method="isValidMoveCard">isValidMoveCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.DealDeckTest" hash-for-method="isValidMoveCardStack">isValidMoveCardStack</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -186,98 +172,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.DealDeckTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="isValidMoveCard">
-                  </a> <!-- isValidMoveCard -->
-                  <span class="method-name">isValidMoveCard</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:304)
-	at org.testng.Assert.assertEquals(Assert.java:314)
-	at test.DealDeckTest.isValidMoveCard(DealDeckTest.java:119)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="isValidMoveCardStack">
-                  </a> <!-- isValidMoveCardStack -->
-                  <span class="method-name">isValidMoveCardStack</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:304)
-	at org.testng.Assert.assertEquals(Assert.java:314)
-	at test.DealDeckTest.isValidMoveCardStack(DealDeckTest.java:146)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -293,13 +187,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getCardAtLocation">
-                  </a> <!-- getCardAtLocation -->
-                  <span class="method-name">getCardAtLocation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="getDeckThroughs">
                   </a> <!-- getDeckThroughs -->
                   <span class="method-name">getDeckThroughs</span>
@@ -310,6 +197,20 @@
                   <a name="hasDealsLeft">
                   </a> <!-- hasDealsLeft -->
                   <span class="method-name">hasDealsLeft</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isValidMoveCard">
+                  </a> <!-- isValidMoveCard -->
+                  <span class="method-name">isValidMoveCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isValidMoveCardStack">
+                  </a> <!-- isValidMoveCardStack -->
+                  <span class="method-name">isValidMoveCardStack</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -366,7 +267,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/3d/r_2hk6v504v171knf21r877c0000gn/T/testng-eclipse-725623435/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/3d/r_2hk6v504v171knf21r877c0000gn/T/testng-eclipse--1581424781/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -415,64 +316,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'hasDealsLeft')
 data.setCell(0, 2, 'test.DealDeckTest')
-data.setCell(0, 3, 2394);
+data.setCell(0, 3, 1937);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'pop')
+data.setCell(1, 1, 'undoPop')
 data.setCell(1, 2, 'test.DealDeckTest')
-data.setCell(1, 3, 973);
+data.setCell(1, 3, 629);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'undoPop')
+data.setCell(2, 1, 'pop')
 data.setCell(2, 2, 'test.DealDeckTest')
-data.setCell(2, 3, 711);
+data.setCell(2, 3, 392);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'DealDeck')
 data.setCell(3, 2, 'test.DealDeckTest')
-data.setCell(3, 3, 22);
+data.setCell(3, 3, 20);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'setDrawCount')
 data.setCell(4, 2, 'test.DealDeckTest')
-data.setCell(4, 3, 22);
+data.setCell(4, 3, 13);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'isValidMoveCard')
 data.setCell(5, 2, 'test.DealDeckTest')
-data.setCell(5, 3, 19);
+data.setCell(5, 3, 10);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'isValidMoveCardStack')
 data.setCell(6, 2, 'test.DealDeckTest')
-data.setCell(6, 3, 14);
+data.setCell(6, 3, 10);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'setDeck')
 data.setCell(7, 2, 'test.DealDeckTest')
-data.setCell(7, 3, 9);
+data.setCell(7, 3, 7);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'setDifficulty')
+data.setCell(8, 1, 'reset')
 data.setCell(8, 2, 'test.DealDeckTest')
 data.setCell(8, 3, 2);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'setDeckThroughs')
+data.setCell(9, 1, 'getDeckThroughs')
 data.setCell(9, 2, 'test.DealDeckTest')
 data.setCell(9, 3, 2);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'getDeckThroughs')
+data.setCell(10, 1, 'setDifficulty')
 data.setCell(10, 2, 'test.DealDeckTest')
-data.setCell(10, 3, 2);
+data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'reset')
+data.setCell(11, 1, 'setDeckThroughs')
 data.setCell(11, 2, 'test.DealDeckTest')
 data.setCell(11, 3, 1);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'getCardAtLocation')
-data.setCell(12, 2, 'test.DealDeckTest')
-data.setCell(12, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -505,159 +402,143 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DealDeck</span>
-                <span class="method-start">438 ms</span>
+                <span class="method-start">323 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">461 ms</span>
+                <span class="method-start">344 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">462 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getCardAtLocation</span>
-                <span class="method-start">473 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">476 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">476 ms</span>
+                <span class="method-start">345 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getDeckThroughs</span>
-                <span class="method-start">487 ms</span>
+                <span class="method-start">356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">490 ms</span>
+                <span class="method-start">359 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">490 ms</span>
+                <span class="method-start">360 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">hasDealsLeft</span>
-                <span class="method-start">500 ms</span>
+                <span class="method-start">370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">2896 ms</span>
+                <span class="method-start">2308 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">2897 ms</span>
+                <span class="method-start">2310 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">isValidMoveCard</span>
-                <span class="method-start">2920 ms</span>
+                <span class="method-start">2325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">2945 ms</span>
+                <span class="method-start">2336 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">2945 ms</span>
+                <span class="method-start">2337 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">isValidMoveCardStack</span>
-                <span class="method-start">2954 ms</span>
+                <span class="method-start">2343 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">2970 ms</span>
+                <span class="method-start">2354 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">2971 ms</span>
+                <span class="method-start">2355 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">pop</span>
-                <span class="method-start">2980 ms</span>
+                <span class="method-start">2364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">3954 ms</span>
+                <span class="method-start">2757 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">3955 ms</span>
+                <span class="method-start">2758 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">reset</span>
-                <span class="method-start">3969 ms</span>
+                <span class="method-start">2768 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">3972 ms</span>
+                <span class="method-start">2771 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">3973 ms</span>
+                <span class="method-start">2772 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">setDeck</span>
-                <span class="method-start">3982 ms</span>
+                <span class="method-start">2781 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">3992 ms</span>
+                <span class="method-start">2789 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">3993 ms</span>
+                <span class="method-start">2791 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">setDeckThroughs</span>
-                <span class="method-start">4004 ms</span>
+                <span class="method-start">2798 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">4007 ms</span>
+                <span class="method-start">2802 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">4007 ms</span>
+                <span class="method-start">2802 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">setDifficulty</span>
-                <span class="method-start">4015 ms</span>
+                <span class="method-start">2810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">4020 ms</span>
+                <span class="method-start">2812 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">4021 ms</span>
+                <span class="method-start">2812 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">setDrawCount</span>
-                <span class="method-start">4029 ms</span>
+                <span class="method-start">2819 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">4052 ms</span>
+                <span class="method-start">2834 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">4053 ms</span>
+                <span class="method-start">2834 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">undoPop</span>
-                <span class="method-start">4058 ms</span>
+                <span class="method-start">2842 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">4770 ms</span>
+                <span class="method-start">3472 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

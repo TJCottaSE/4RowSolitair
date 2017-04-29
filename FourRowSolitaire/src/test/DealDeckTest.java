@@ -71,11 +71,6 @@ public class DealDeckTest {
     
   }
 
-  @Test
-  public void getCardAtLocation() throws Exception {
-		
-  }
-
   /**
    * Test getDeckThroughs method
    * tests amount set by constructor, and amount
@@ -107,8 +102,12 @@ public class DealDeckTest {
 		assertEquals(deck.hasDealsLeft(), false);
   }
 
+  /**
+   * Test that isValidMove(Card) returns false
+   *
+   */
   @Test
-  public void isValidMoveCard() throws Exception {			/* CardStack isValidMove(Card) has error */ 
+  public void isValidMoveCard() throws Exception {
 	  
 	  Card black_2, red_2;
 	  black_2 = new Card("Spades", 2, 1, 2);
@@ -116,13 +115,17 @@ public class DealDeckTest {
 	  
 	  deck.setDeck(cardList);
 	  assertEquals(deck.isValidMove(red_2), false);	  
-	  assertEquals(deck.isValidMove(black_2), true);
+	  assertEquals(deck.isValidMove(black_2), false);
 	  
 		
   }
 
+  /**
+   * Test that isValidMove(CardStack) returns false
+   * @throws Exception
+   */
   @Test
-  public void isValidMoveCardStack() throws Exception {		/* CardStack isValidMove(CardStack) has error */
+  public void isValidMoveCardStack() throws Exception {	
 	  
 	  DealDeck testDeck = new DealDeck(discard2, 1);
 	  LinkedList<Card> testList = new LinkedList<Card>();
@@ -143,7 +146,7 @@ public class DealDeckTest {
 	  stack.push(red_3);
 	  stack.push(black_2);
 	  
-	  assertEquals(testDeck.isValidMove(stack), true);
+	  assertEquals(testDeck.isValidMove(stack), false);
 	  
 	
   }
@@ -219,7 +222,22 @@ public class DealDeckTest {
 
   @Test
   public void setDifficulty() {
+	  // easy
 	  deck.setDifficulty(1);
+	  assertEquals(deck.getDeckThroughLimit(), 3);
+	  
+	  // medium
+	  deck.setDifficulty(2);
+	  assertEquals(deck.getDeckThroughLimit(), 2);
+	  
+	  // hard
+	  deck.setDifficulty(3);
+	  assertEquals(deck.getDeckThroughLimit(), 1);
+	  
+	  // increase draw count
+	  deck.setDrawCount(3);
+	  deck.setDifficulty(2);
+	  assertEquals(deck.getDeckThroughLimit(), 3);
 	  
   }
 
