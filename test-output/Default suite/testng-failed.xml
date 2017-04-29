@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.ColumnTest">
+      <class name="test.DealDeckTest">
         <methods>
-          <include name="testPush"/>
-          <include name="tearDown"/>
-          <include name="testStackIsValidMove"/>
-          <include name="testIsValidMove"/>
-          <include name="setUp"/>
+          <include name="setDifficulty"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- test.ColumnTest -->
+      </class> <!-- test.DealDeckTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

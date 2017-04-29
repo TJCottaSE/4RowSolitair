@@ -133,6 +133,10 @@ public class DealDeck extends CardStack
             deckThroughLimit++; //draw three has an extra deck through on top of the single card setting
         }
     }
+    
+    public int getDeckThroughLimit(){
+    	return deckThroughLimit;
+    }
 
     public boolean hasDealsLeft()
     {

@@ -1,61 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="721" started-at="2017-04-28T14:08:44Z" finished-at="2017-04-28T14:08:45Z">
+  <suite name="Default suite" duration-ms="3519" started-at="2017-04-29T04:41:21Z" finished-at="2017-04-29T04:41:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="721" started-at="2017-04-28T14:08:44Z" finished-at="2017-04-28T14:08:45Z">
-      <class name="test.ColumnTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="494" started-at="2017-04-28T09:08:44Z" finished-at="2017-04-28T09:08:44Z">
+    <test name="Default test" duration-ms="3519" started-at="2017-04-29T04:41:21Z" finished-at="2017-04-29T04:41:25Z">
+      <class name="test.DealDeckTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="323" started-at="2017-04-28T23:41:21Z" finished-at="2017-04-28T23:41:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetAvailableCards()[pri:0, instance:test.ColumnTest@fb6097b]" name="testGetAvailableCards" duration-ms="117" started-at="2017-04-28T09:08:44Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="DealDeck()[pri:0, instance:test.DealDeckTest@42714a7]" name="DealDeck" duration-ms="20" started-at="2017-04-28T23:41:22Z" finished-at="2017-04-28T23:41:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAvailableCards -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="20" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- DealDeck -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-04-28T23:41:22Z" finished-at="2017-04-28T23:41:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="11" started-at="2017-04-28T23:41:22Z" finished-at="2017-04-28T23:41:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="testIsValidMove()[pri:0, instance:test.ColumnTest@fb6097b]" name="testIsValidMove" duration-ms="1" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="getDeckThroughs()[pri:0, instance:test.DealDeckTest@42714a7]" name="getDeckThroughs" duration-ms="2" started-at="2017-04-28T23:41:22Z" finished-at="2017-04-28T23:41:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testIsValidMove -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- getDeckThroughs -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:22Z" finished-at="2017-04-28T23:41:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="9" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="10" started-at="2017-04-28T23:41:22Z" finished-at="2017-04-28T23:41:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testPush()[pri:0, instance:test.ColumnTest@fb6097b]" name="testPush" duration-ms="2" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="hasDealsLeft()[pri:0, instance:test.DealDeckTest@42714a7]" name="hasDealsLeft" duration-ms="1937" started-at="2017-04-28T23:41:22Z" finished-at="2017-04-28T23:41:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPush -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- hasDealsLeft -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@fb6097b]" name="setUp" is-config="true" duration-ms="10" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="15" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testStackIsValidMove()[pri:0, instance:test.ColumnTest@fb6097b]" name="testStackIsValidMove" duration-ms="2" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="isValidMoveCard()[pri:0, instance:test.DealDeckTest@42714a7]" name="isValidMoveCard" duration-ms="10" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testStackIsValidMove -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@fb6097b]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-28T09:08:45Z" finished-at="2017-04-28T09:08:45Z">
+        </test-method> <!-- isValidMoveCard -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.ColumnTest -->
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="6" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="isValidMoveCardStack()[pri:0, instance:test.DealDeckTest@42714a7]" name="isValidMoveCardStack" duration-ms="10" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidMoveCardStack -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="9" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="pop()[pri:0, instance:test.DealDeckTest@42714a7]" name="pop" duration-ms="392" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pop -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="10" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="reset()[pri:0, instance:test.DealDeckTest@42714a7]" name="reset" duration-ms="2" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="9" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setDeck()[pri:0, instance:test.DealDeckTest@42714a7]" name="setDeck" duration-ms="7" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDeck -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="7" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setDeckThroughs()[pri:0, instance:test.DealDeckTest@42714a7]" name="setDeckThroughs" duration-ms="1" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDeckThroughs -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="8" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="setDifficulty()[pri:0, instance:test.DealDeckTest@42714a7]" name="setDifficulty" duration-ms="1" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDifficulty -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="7" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setDrawCount()[pri:0, instance:test.DealDeckTest@42714a7]" name="setDrawCount" duration-ms="13" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDrawCount -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="beforeClass" is-config="true" duration-ms="8" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="undoPop()[pri:0, instance:test.DealDeckTest@42714a7]" name="undoPop" duration-ms="629" started-at="2017-04-28T23:41:24Z" finished-at="2017-04-28T23:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- undoPop -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@42714a7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-28T23:41:25Z" finished-at="2017-04-28T23:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.DealDeckTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
