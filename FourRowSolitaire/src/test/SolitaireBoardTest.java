@@ -6,7 +6,10 @@ package test;
  */
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 
 import org.testng.TestNG;
@@ -27,101 +30,86 @@ public class SolitaireBoardTest  extends TestNG {
   	}
 
   	@Test
-  	public void SolitaireBoard(){
-	  	throw new RuntimeException("Test not implemented");
-  	}
-  
-  	@Test
-	public void test_type() throws Exception {
-		assertNotNull(SolitaireBoard.class);
-	}
-  	
-  	@Test
-	public void test_instantiation() throws Exception {
-		SolitaireBoard target = new SolitaireBoard();
-		assertNotNull(target);
-	}
-
-  	@Test
-  	public void clearBoard() {
-	  	throw new RuntimeException("Test not implemented");
-  	}
-
-  	@Test
   	public void createBoard() throws Exception {
 	  	SolitaireBoard target = new SolitaireBoard();
 	  	LinkedList<Integer> cards = null;
 	  	target.createBoard(cards);
-  	}
-
-  	@Test
-  	public void dealOutBoard() {
-	  	throw new RuntimeException("Test not implemented");
+	  	assertTrue(false);
   	}
 
   	@Test
   	public void dealOutCustomBoard() {
-	  	throw new RuntimeException("Test not implemented");
+  		assertTrue(false);
   	}
 
   	@Test
   	public void getHint() throws Exception {
 	  	SolitaireBoard target = new SolitaireBoard();
 	  	target.getHint();
+	  	assertTrue(false);
   	}
 
+  	/**
+  	 * Test to get the status of timer for the next game.
+  	 * @throws Exception
+  	 */
   	@Test
   	public void getTimerNextGameStatus() throws Exception {
-
-		SolitaireBoard target = new SolitaireBoard();
-		int actual = target.getTimerNextGameStatus();
-		int expected = 0;
-		assertEquals(expected, actual);
+		SolitaireBoard board = new SolitaireBoard();
+		board.setTimerStatus(1);
+		assertEquals(board.getTimerNextGameStatus(), 1);
+		board.setTimerStatus(0);
+		assertEquals(board.getTimerNextGameStatus(), 1);
+		board.setTimerStatus(3);
+		assertEquals(board.getTimerStatus(), 0);
   	}
 
-  	@Test
-  	public void getTimerStatus() throws Exception {
-
-		SolitaireBoard target = new SolitaireBoard();
-		int actual = target.getTimerStatus();
-		int expected = 0;
-		assertEquals(expected, actual);
-  	}
-
+  	/**
+  	 * Test the creation of a new game
+  	 * @throws Exception
+  	 */
   	@Test
   	public void newGame() throws Exception {
-
-		SolitaireBoard target = new SolitaireBoard();
-		int winOrLoss = 0;
-		target.newGame(winOrLoss);
+		SolitaireBoard board = new SolitaireBoard();
+		board.createBoard(null);
+		board.setDeckThroughs(2);
+		board.newGame(0);
+		assertEquals(board.getDeckThroughs(), 1);
   	}
 
   	@Test
   	public void recordGame() {
-	  	throw new RuntimeException("Test not implemented");
+  		assertTrue(false);
   	}
 
   	@Test
   	public void resetStats() throws Exception {
-
 		SolitaireBoard target = new SolitaireBoard();
 		target.resetStats();
+		assertTrue(false);
   	}
 
   	@Test
   	public void saveOptions() throws Exception {
-
-		SolitaireBoard target = new SolitaireBoard();
-		target.saveOptions();
+  		SolitaireBoard board = new SolitaireBoard();
+  		board.saveOptions();
+  		assertTrue(false);
   	}
 
+  	/**
+  	 * Test setting the appearance, specifically
+  	 * the deck, and background elements.
+  	 * @throws Exception
+  	 */
   	@Test
   	public void setAppearance() throws Exception {
-
-		SolitaireBoard target = new SolitaireBoard();
-		int deck = 0;
-		int background = 0;
-		target.setAppearance(deck, background);
+		SolitaireBoard board = new SolitaireBoard();
+		int deck = 1;
+		int background = 1;
+		board.createBoard(null);
+		board.setAppearance(deck, background);
+		assertEquals(board.getDeckNumber(), 1);
+		assertEquals(board.getBackgroundNumber(), 1);
   	}
 
   	/**
@@ -153,11 +141,18 @@ public class SolitaireBoardTest  extends TestNG {
   		
   	}
 
+  	/**
+  	 * Test setting the deck through count
+  	 * @throws Exception
+  	 */
   	@Test
   	public void setDeckThroughs() throws Exception {
-  		SolitaireBoard target = new SolitaireBoard();
+  		SolitaireBoard board = new SolitaireBoard();
   		int deckThroughs = 0;
-  		target.setDeckThroughs(deckThroughs);
+  		board.setDeckThroughs(deckThroughs);
+  		assertEquals(board.getDeckThroughs(), 0);
+  		board.setDeckThroughs(2);
+  		assertEquals(board.getDeckThroughs(), 2);
   	}
 
   	/**
@@ -228,12 +223,25 @@ public class SolitaireBoardTest  extends TestNG {
   		assertEquals(board.getNewDrawCount(), 3);
   	}
 
+  	/**
+  	 * Test that sets the timer status of future games
+  	 * This tests both getters and setters
+  	 * @throws Exception
+  	 */
   	@Test
   	public void setTimerStatus() throws Exception {
-
-		SolitaireBoard target = new SolitaireBoard();
-		int timerInt = 0;
-		target.setTimerStatus(timerInt);
+		SolitaireBoard board = new SolitaireBoard();
+		board.setTimerStatus(4);
+		assertEquals(board.getTimerStatus(), 0);
+		board.setTimerStatus(1);
+		assertEquals(board.getTimerStatus(), 0);
+		board.createBoard(null);
+		board.newGame(0);
+		board.setTimerStatus(0);
+		assertEquals(board.getTimerStatus(), 0);
+		board.newGame(0);
+		assertEquals(board.getTimerStatus(), 0);
+		
   	}
 
   	/**
@@ -266,10 +274,14 @@ public class SolitaireBoardTest  extends TestNG {
   		assertEquals(board.getWinSoundsStatus(), 0);
   	}
 
+  	/**
+  	 * This is a UI Bound method and as such will not 
+  	 * be Unit tested, but tested in during integration
+  	 * and system testing. 
+  	 * @throws Exception
+  	 */
   	@Test
   	public void undoMove() throws Exception {
-  		SolitaireBoard target = new SolitaireBoard();
-  		target.undoMove();
   	}
 
 }

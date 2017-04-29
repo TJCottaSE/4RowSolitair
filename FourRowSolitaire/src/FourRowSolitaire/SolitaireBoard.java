@@ -1152,6 +1152,10 @@ public class SolitaireBoard extends JFrame
     {
         dealDeck.setDeckThroughs(deckThroughs);
     }
+    
+    public int getDeckThroughs() {
+    	return dealDeck.getDeckThroughs();
+    }
 
     public synchronized void undoMove()
     {
