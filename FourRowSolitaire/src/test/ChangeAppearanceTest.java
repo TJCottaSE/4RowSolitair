@@ -15,7 +15,6 @@ import FourRowSolitaire.ChangeAppearance;
 public class ChangeAppearanceTest {
 	
 
-
   @Test
   public void ChangeAppearance() throws Exception {
 	  assertNotNull(ChangeAppearance.class);
