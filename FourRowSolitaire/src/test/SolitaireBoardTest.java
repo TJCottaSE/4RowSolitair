@@ -10,6 +10,9 @@ import static org.testng.Assert.assertTrue;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.LinkedList;
 
 import org.testng.TestNG;
@@ -77,23 +80,334 @@ public class SolitaireBoardTest  extends TestNG {
 		assertEquals(board.getDeckThroughs(), 1);
   	}
 
-  	@Test
-  	public void recordGame() {
-  		assertTrue(false);
-  	}
-
+  	/**
+  	 * Method to test that resetting statistics actually
+  	 * sets the values to 0's. 
+  	 * @throws Exception
+  	 */
   	@Test
   	public void resetStats() throws Exception {
 		SolitaireBoard target = new SolitaireBoard();
 		target.resetStats();
-		assertTrue(false);
+		//assertTrue(false);
+        int count = 0, temp = 1;
+        int gamesPlayed1e = 1, gamesWon1e = 1, winStreak1e = 1, lossStreak1e = 1,
+            currentStreak1e = 1;
+        int gamesPlayed1m = 1, gamesWon1m = 1, winStreak1m = 1, lossStreak1m = 1,
+            currentStreak1m = 1;
+        int gamesPlayed1h = 1, gamesWon1h = 1, winStreak1h = 1, lossStreak1h = 1,
+            currentStreak1h = 1;
+        int gamesPlayed3e = 1, gamesWon3e = 1, winStreak3e = 1, lossStreak3e = 1,
+            currentStreak3e = 1;
+        int gamesPlayed3m = 1, gamesWon3m = 1, winStreak3m = 1, lossStreak3m = 1,
+            currentStreak3m = 1;
+        int gamesPlayed3h = 1, gamesWon3h = 1, winStreak3h = 1, lossStreak3h = 1,
+            currentStreak3h = 1;
+
+        String fileLocation = System.getProperty("user.home") + System.getProperty("file.separator");
+        File file = new File(fileLocation + "frs-statistics.dat");
+
+        try
+        {
+            file.createNewFile();
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex);
+        }
+
+        try
+        {
+            DataInputStream input = new DataInputStream(new FileInputStream(file));
+
+            if(input.available() > 0)
+            {
+                temp = input.readInt();
+                count++;
+            }
+
+            if(temp != -1)
+            {
+                gamesPlayed1m = temp;
+
+                while((input.available() > 0) && count < 5)
+                {
+                    temp = input.readInt();
+                    switch(count)
+                    {
+                        //case 0 is the format checker
+                        case 1: gamesWon1m = temp; break;
+                        case 2: winStreak1m = temp; break;
+                        case 3: lossStreak1m = temp; break;
+                        case 4: currentStreak1m = temp; break;
+
+                        default: ; break;
+                    }
+
+                    count++;
+                }
+            }
+            else
+            {
+                while((input.available() > 0) && count < 31)
+                {
+                    temp = input.readInt();
+                    switch(count)
+                    {
+                        //case 0 is the format checker
+                        case 1: gamesPlayed1e = temp; break;
+                        case 2: gamesWon1e = temp; break;
+                        case 3: winStreak1e = temp; break;
+                        case 4: lossStreak1e = temp; break;
+                        case 5: currentStreak1e = temp; break;
+
+                        case 6: gamesPlayed1m = temp; break;
+                        case 7: gamesWon1m = temp; break;
+                        case 8: winStreak1m = temp; break;
+                        case 9: lossStreak1m = temp; break;
+                        case 10: currentStreak1m = temp; break;
+
+                        case 11: gamesPlayed1h = temp; break;
+                        case 12: gamesWon1h = temp; break;
+                        case 13: winStreak1h = temp; break;
+                        case 14: lossStreak1h = temp; break;
+                        case 15: currentStreak1h = temp; break;
+
+                        case 16: gamesPlayed3e = temp; break;
+                        case 17: gamesWon3e = temp; break;
+                        case 18: winStreak3e = temp; break;
+                        case 19: lossStreak3e = temp; break;
+                        case 20: currentStreak3e = temp; break;
+
+                        case 21: gamesPlayed3m = temp; break;
+                        case 22: gamesWon3m = temp; break;
+                        case 23: winStreak3m = temp; break;
+                        case 24: lossStreak3m = temp; break;
+                        case 25: currentStreak3m = temp; break;
+
+                        case 26: gamesPlayed3h = temp; break;
+                        case 27: gamesWon3h = temp; break;
+                        case 28: winStreak3h = temp; break;
+                        case 29: lossStreak3h = temp; break;
+                        case 30: currentStreak3h = temp; break;
+
+                        default: ; break;
+                    }
+                    count++;
+                }
+            }
+            input.close();
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex);
+        }
+        assertTrue(gamesWon1e == 0);
+        assertTrue(gamesPlayed1e == 0);
+        assertTrue(currentStreak1e == 0);
+        assertTrue(winStreak1e == 0);
+        assertTrue(lossStreak1e == 0);
+
+        assertTrue(gamesWon1m == 0);
+        assertTrue(gamesPlayed1m == 0);
+        assertTrue(currentStreak1m == 0);
+        assertTrue(winStreak1m == 0);
+        assertTrue(lossStreak1m == 0);
+
+        assertTrue(gamesWon1h == 0);
+        assertTrue(gamesPlayed1h == 0);
+        assertTrue(currentStreak1h == 0);
+        assertTrue(winStreak1h == 0);
+        assertTrue(lossStreak1h == 0);
+
+        assertTrue(gamesWon3e == 0);
+        assertTrue(gamesPlayed3e == 0);
+        assertTrue(currentStreak3e == 0);
+        assertTrue(winStreak3e == 0);
+        assertTrue(lossStreak3e == 0);
+
+        assertTrue(gamesWon3m == 0);
+        assertTrue(gamesPlayed3m == 0);
+        assertTrue(currentStreak3m == 0);
+        assertTrue(winStreak3m == 0);
+        assertTrue(lossStreak3m == 0);
+
+        assertTrue(gamesWon3h == 0);
+        assertTrue(gamesPlayed3h == 0);
+        assertTrue(currentStreak3h == 0);
+        assertTrue(winStreak3h == 0);
+        assertTrue(lossStreak3h == 0);
   	}
 
+  	/**
+  	 * Test saving and retrieving saved game options.
+  	 * @throws Exception
+  	 */
   	@Test
   	public void saveOptions() throws Exception {
   		SolitaireBoard board = new SolitaireBoard();
+  		board.setDrawCount(2);
+  		board.setNewDrawCount(3);
+  		board.setDeckNumber(3);
+  		board.setBackgroundNumber(1);
+  		board.setTimerStatus(1);
+  		board.setWinAnimationStatus(1);
+  		board.setWinSoundsStatus(1);
+  		board.setDeckThroughs(3);
+  		board.setDifficulty(3);
+  		board.setNewDifficulty(1);
+
   		board.saveOptions();
-  		assertTrue(false);
+  		
+  		// Read in Stats
+        int count = 0, temp = 1;
+        int gamesPlayed1e = 1, gamesWon1e = 1, winStreak1e = 1, lossStreak1e = 1,
+            currentStreak1e = 1;
+        int gamesPlayed1m = 1, gamesWon1m = 1, winStreak1m = 1, lossStreak1m = 1,
+            currentStreak1m = 1;
+        int gamesPlayed1h = 1, gamesWon1h = 1, winStreak1h = 1, lossStreak1h = 1,
+            currentStreak1h = 1;
+        int gamesPlayed3e = 1, gamesWon3e = 1, winStreak3e = 1, lossStreak3e = 1,
+            currentStreak3e = 1;
+        int gamesPlayed3m = 1, gamesWon3m = 1, winStreak3m = 1, lossStreak3m = 1,
+            currentStreak3m = 1;
+        int gamesPlayed3h = 1, gamesWon3h = 1, winStreak3h = 1, lossStreak3h = 1,
+            currentStreak3h = 1;
+        // Read in Settings
+        int drawCount = -1, newDrawCount = -1, deckNumber = -1, backgroundNumber = -1, timerToRunNextGame = -1, 
+        	winAnimationStatus = -1, winSoundsStatus = -1, deckThroughs = -1, difficulty = -1, newDifficulty = -1;
+
+        String fileLocation = System.getProperty("user.home") + System.getProperty("file.separator");
+        File file = new File(fileLocation + "frs-statistics.dat");
+
+        try
+        {
+            file.createNewFile();
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex);
+        }
+
+        try
+        {
+            DataInputStream input = new DataInputStream(new FileInputStream(file));
+
+            if(input.available() > 0)
+            {
+                temp = input.readInt();
+                count++;
+            }
+
+            if(temp != -1)
+            {
+                gamesPlayed1m = temp;
+
+                while((input.available() > 0) && count < 5)
+                {
+                    temp = input.readInt();
+                    switch(count)
+                    {
+                        //case 0 is the format checker
+                        case 1: gamesWon1m = temp; break;
+                        case 2: winStreak1m = temp; break;
+                        case 3: lossStreak1m = temp; break;
+                        case 4: currentStreak1m = temp; break;
+
+                        default: ; break;
+                    }
+
+                    count++;
+                }
+            }
+            else
+            {
+                while((input.available() > 0) && count < 31)
+                {
+                    temp = input.readInt();
+                    switch(count)
+                    {
+                        //case 0 is the format checker
+                        case 1: gamesPlayed1e = temp; break;
+                        case 2: gamesWon1e = temp; break;
+                        case 3: winStreak1e = temp; break;
+                        case 4: lossStreak1e = temp; break;
+                        case 5: currentStreak1e = temp; break;
+
+                        case 6: gamesPlayed1m = temp; break;
+                        case 7: gamesWon1m = temp; break;
+                        case 8: winStreak1m = temp; break;
+                        case 9: lossStreak1m = temp; break;
+                        case 10: currentStreak1m = temp; break;
+
+                        case 11: gamesPlayed1h = temp; break;
+                        case 12: gamesWon1h = temp; break;
+                        case 13: winStreak1h = temp; break;
+                        case 14: lossStreak1h = temp; break;
+                        case 15: currentStreak1h = temp; break;
+
+                        case 16: gamesPlayed3e = temp; break;
+                        case 17: gamesWon3e = temp; break;
+                        case 18: winStreak3e = temp; break;
+                        case 19: lossStreak3e = temp; break;
+                        case 20: currentStreak3e = temp; break;
+
+                        case 21: gamesPlayed3m = temp; break;
+                        case 22: gamesWon3m = temp; break;
+                        case 23: winStreak3m = temp; break;
+                        case 24: lossStreak3m = temp; break;
+                        case 25: currentStreak3m = temp; break;
+
+                        case 26: gamesPlayed3h = temp; break;
+                        case 27: gamesWon3h = temp; break;
+                        case 28: winStreak3h = temp; break;
+                        case 29: lossStreak3h = temp; break;
+                        case 30: currentStreak3h = temp; break;
+
+                        default: ; break;
+                    }
+                    count++;
+                }
+                // Read Setting Input
+                count = 0;
+                while((input.available() > 0) && count < 20){
+                	temp = input.readInt();
+                    switch(count)
+                    {
+                    	case 0: drawCount = temp; break;
+                    	case 1: newDrawCount = temp; break;
+                    	case 2: deckNumber = temp; break;
+                    	case 3: backgroundNumber = temp; break;
+                    	case 4: timerToRunNextGame = temp; break;
+                    	
+                    	case 5: winAnimationStatus = temp; break;
+                    	case 6: winSoundsStatus = temp; break;
+                    	case 7: deckThroughs = temp; break;
+                    	case 8: difficulty = temp; break;
+                    	case 9: newDifficulty = temp; break;
+                    	
+                    }
+                    count++;
+                }
+            }
+            input.close();
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex);
+        }
+
+  		assertEquals(drawCount, 1);
+  		assertEquals(newDrawCount, 3);
+  		assertEquals(deckNumber, 3);
+  		assertEquals(backgroundNumber, 1);
+  		assertEquals(timerToRunNextGame, 1);
+  		assertEquals(winAnimationStatus, 1);
+  		assertEquals(winSoundsStatus, 1);
+  		assertEquals(deckThroughs, 3);
+  		assertEquals(difficulty, 3);
+  		assertEquals(newDifficulty, 1);
+
   	}
 
   	/**

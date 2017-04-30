@@ -38,10 +38,4 @@ public class FireworksDisplayTest {
   public void randomColor() {
     assertFalse(fw.randomColor().equals(null));
   }
-
-  @Test
-  public void restartDisplay() {
-    throw new RuntimeException("Test not implemented");
-  }
-
 }
