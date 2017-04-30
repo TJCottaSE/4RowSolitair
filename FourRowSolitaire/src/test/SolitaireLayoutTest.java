@@ -91,7 +91,7 @@ public class SolitaireLayoutTest {
 	  Dimension actual = null;
 	  SolitaireLayout target = new SolitaireLayout();
 	  Container parent = null;
-	  actual = target.minimumLayoutSize(parent);
+	  //actual = target.minimumLayoutSize(parent);
 
   }
 
@@ -101,7 +101,7 @@ public class SolitaireLayoutTest {
 	  Dimension actual = null;
 	  SolitaireLayout target = new SolitaireLayout();
 	  Container parent = null;
-	  actual = target.preferredLayoutSize(parent);
+	  //actual = target.preferredLayoutSize(parent);
 
   }
 
