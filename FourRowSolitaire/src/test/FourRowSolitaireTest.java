@@ -21,18 +21,13 @@ public class FourRowSolitaireTest {
   }
 
   @Test
-  public void FourRowSolitaire() throws Exception {
-	  assertNotNull(FourRowSolitaire.class);
-	  FourRowSolitaire target = new FourRowSolitaire();
-	  assertNotNull(target);
-		
+  public void FourRowSolitaire() {
+    throw new RuntimeException("Test not implemented");
   }
 
   @Test
-  public void actionPerformed() throws Exception {	
-		FourRowSolitaire target = new FourRowSolitaire();
-		ActionEvent e = null;
-		target.actionPerformed(e);
+  public void actionPerformed() {
+    throw new RuntimeException("Test not implemented");
   }
 
   @Test
@@ -46,10 +41,34 @@ public class FourRowSolitaireTest {
   }
 
   @Test
-  public void main() throws Exception {
-		
-		String[] args = new String[] {};
-		FourRowSolitaire.main(args); 
+  public void main() {
+    throw new RuntimeException("Test not implemented");
   }
   
+  @Test
+	public void test_type() throws Exception {
+		
+		assertNotNull(FourRowSolitaire.class);
+	}
+  
+  @Test
+	public void test_instantiation() throws Exception {
+		
+		FourRowSolitaire target = new FourRowSolitaire();
+		assertNotNull(target);
+	}
+  @Test
+	public void test_main_A$StringArray() throws Exception {
+		
+		String[] args = new String[] {};
+		FourRowSolitaire.main(args);
+	}
+  @Test
+	public void test_actionPerformed_A$ActionEvent() throws Exception {
+		
+		FourRowSolitaire target = new FourRowSolitaire();
+		ActionEvent e = null;
+		target.actionPerformed(e);
+	}
 }
+

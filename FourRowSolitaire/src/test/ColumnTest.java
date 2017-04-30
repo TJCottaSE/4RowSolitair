@@ -1,121 +1,116 @@
 package test;
-
-import org.testng.TestNG;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertNull;
 import static org.testng.Assert.assertTrue;
 
-import java.util.ArrayList;
-
-import org.testng.AssertJUnit;
-import org.testng.annotations.AfterClass;
+/**
+ * Test the column class for defects
+ * @author Nolan Miller, Tony Cotta
+ */
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import FourRowSolitaire.Card;
 import FourRowSolitaire.CardStack;
 import FourRowSolitaire.Column;
-import FourRowSolitaire.SingleCell;
 
-public class ColumnTest extends CardStack {
+public class ColumnTest{
 	
+	Card black_K, black_Q, red_Q, black_J, red_10;
+	CardStack stack;
+	Column col;
 	
-	private final ArrayList<Card> cards = new ArrayList<Card>();
-	
-
-	ColumnTest sc = null;
-	Card card1 = null;
-	Card card2 = null;
-	CardStack stack = new CardStack();
-
-	
-	Card cardPop = stack.pop();
-	Card cardPeek = stack.peek();
-	Card cardPush = sc.push();
- 
 	@BeforeMethod
 	public void setUp() throws Exception {
-		sc = new ColumnTest();
-		card1 = new Card("Spades", 1, 1, 1);
-		card2 = new Card("Spades", 13, 1, 13);
+		black_K = new Card("Spades", 13, 1, 1);
+		black_J = new Card("Spades", 11, 1, 2);
+		red_Q = new Card("Hearts", 12, 1, 3);
+		red_10 = new Card("Diamonds", 10, 1, 4);
+		black_Q = new Card("Clubs", 12, 1, 5);
+		col = new Column();
+		stack = new CardStack();
 	}
 
 	@AfterMethod
 	public void tearDown() throws Exception {
-		sc = null;
-		card1 = null;
-		card2 = null;
+		black_K = null;
+		black_J = null;
+		red_Q = null;
+		red_10 = null;
+		black_Q = null;
+		col = null;
+		stack = null;
 	}
 
-  @Test
-  public void Column() throws Exception {
-    assertNotNull(Column.class);
-    Column target = new Column();
-	assertNotNull(target);
-  }
-  
-  @Test
-  public void push() throws Exception {
-	  sc.isEmpty();
-	  sc.KING = sc.getNumber(); 
-	  sc.push(card1);
-	  assertEquals(card1, sc.peek());
-	  assertNull(sc.push(card2));
-	
-	  
-		//Column target = new Column();
-		//Object card = null;
-		//Object actual = target.push(card);
-		//Object expected = null;
-		//assertEquals(expected, actual);
-  }
- 
-  @Test
-  public void isValidMoveCard() throws Exception {
-	  
-	  sc.push(card1);
-	  sc.push(card2);
-	  assertFalse(sc.isValidMove(card1));
-	  sc.isEmpty();
-	  //assertTrue(sc.isValidMove(card1));
-	  
-	  Column target = new Column();
-	  card1 = KING;
-	  boolean actual = target.isValidMove(card1);
-	  boolean expected = false;
-	  assertEquals(expected, actual);
-  }
-
-  @Test
-  public void isValidMoveCardStack() throws Exception {
+	/**
+	 * Test whether a stack to a column is a valid move, compares top card
+	 */
+	@Test
+	public void testStackIsValidMove(){
 		
-		CardStack stack = new CardStack();
-		stack.push(card1);
-		stack.push(card2);
-		stack.peek();
-		assertFalse(sc.isValidMove(stack));
+		stack.push(black_K);
 		
-		//@Override
-	    //public boolean isValidMove(CardStack stack)
-	    //{
-	        //return isValidMove(stack.peek());
-	    //}
+		assertTrue(col.isValidMove(stack));
+		
+		stack.pop();
+		stack.push(red_Q);
+		assertFalse(col.isValidMove(stack));
+		
+		col.push(black_K);
+		assertTrue(col.isValidMove(stack));
+		
+	}
 	
-	  
-		//Column target = new Column();
-		//Object stack = null;
-		//boolean actual = target.isValidMove(stack);
-		//boolean expected = false;
-		//assertEquals(expected, actual);
-  }
+	/**
+	 * Tests push method, whether or not a card can go to a column
+	 */
+	@Test
+	public void testPush(){
+		
+		assertEquals(col.push(black_K), black_K);
+		col.push(black_K);
+		assertNull(col.push(black_Q));
+		assertNull(col.push(red_10));
+		assertEquals(col.push(red_Q), red_Q);
+	}
+	
+	/**
+	 * Test if a card to column is a valid move
+	 */
+	@Test
+	public void testIsValidMove(){
+		
+		assertTrue(col.isValidMove(black_K));
+		col.push(black_K);
+		assertTrue(col.isValidMove(red_Q));
+		col.push(red_Q);
+		assertTrue(col.isValidMove(black_J));
+		col.push(black_J);
+		assertTrue(col.isValidMove(red_10));
+		col.push(red_10);
+		
+		assertFalse(col.isValidMove(black_K));
+		assertFalse(col.isValidMove(red_10));	
+	}
+	
+	/**
+	 * Test getting the available cards in the column
+	 */
+	@Test
+	public void testGetAvailableCards(){
 
+		Card card1 = new Card("Spades", 1, 1, 1);
+		Card card2 = new Card("Spades", 2, 1, 2);
+		Card card3 = new Card("Spades", 3, 1, 3);
+		Card card4 = new Card("Hearts", 10, 1, 40);
+		col.addCard(card1);
+		col.addCard(card2);
+		col.addCard(card3);
+		col.addCard(card4);
+		
+		CardStack newStack = col.getAvailableCards();
+		assertEquals(newStack.pop().getFullNumber(), card4.getFullNumber());
+	}
 }

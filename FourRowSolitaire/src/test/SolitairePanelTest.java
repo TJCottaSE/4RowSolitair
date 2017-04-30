@@ -53,7 +53,7 @@ public class SolitairePanelTest extends JPanel {
   {
 	  SolitairePanel target = new SolitairePanel();
 	  Graphics g;
-	  target.paintComponent(g);
+	  //target.paintComponent(g);
 	  assertNotNull(target);    
   }
 }
