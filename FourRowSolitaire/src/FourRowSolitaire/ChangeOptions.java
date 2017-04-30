@@ -73,6 +73,10 @@ public class ChangeOptions extends JDialog implements ActionListener
 
         setVisible(true);
     }
+    
+    public void setExited(boolean exited){
+    	this.exited = exited;
+    }
 
     private void setup()
     {
