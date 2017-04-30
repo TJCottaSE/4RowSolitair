@@ -23,53 +23,10 @@ public class ChangeOptionsTest {
   }
 
   @Test
-  public void ChangeOptions() {
-    throw new RuntimeException("Test not implemented");
-  }
-
-  @Test
-  public void actionPerformed() {
-    throw new RuntimeException("Test not implemented");
-  }
-
-  @Test
-  public void getAnimation() {
-    throw new RuntimeException("Test not implemented");
-  }
-
-  @Test
-  public void getDifficulty() {
-    throw new RuntimeException("Test not implemented");
-  }
-
-  @Test
-  public void getDrawCount() {
-    throw new RuntimeException("Test not implemented");
-  }
-
-  @Test
-  public void getSounds() {
-    throw new RuntimeException("Test not implemented");
-  }
-
-  @Test
-  public void getTimer() {
-    throw new RuntimeException("Test not implemented");
-  }
-
-  @Test
-  public void setup() {
-    throw new RuntimeException("Test not implemented");
-  }
-  
-  @Test
-	public void test_type() throws Exception {
-	
-		assertNotNull(ChangeOptions.class);
-	}
-  @Test
-	public void test_instantiation() throws Exception {
+  public void ChangeOptions() throws Exception {
 		
+		assertNotNull(ChangeOptions.class);
+
 		JFrame parent = null;
 		int currentDraw = 0;
 		int timer = 0;
@@ -78,9 +35,11 @@ public class ChangeOptionsTest {
 		int difficulty = 0;
 		ChangeOptions target = new ChangeOptions(parent, currentDraw, timer, animation, sounds, difficulty);
 		assertNotNull(target);
-	}
+	
+  }
+
   @Test
-	public void test_actionPerformed_A$ActionEvent() throws Exception {
+  public void actionPerformed() throws Exception {
 		
 		JFrame parent = null;
 		int currentDraw = 0;
@@ -91,5 +50,36 @@ public class ChangeOptionsTest {
 		ChangeOptions target = new ChangeOptions(parent, currentDraw, timer, animation, sounds, difficulty);
 		ActionEvent e = null;
 		//target.actionPerformed(e);
-	}
+  }
+
+  @Test
+  public void getAnimation() throws Exception {
+
+  }
+
+  @Test
+  public void getDifficulty() throws Exception {
+
+  }
+
+  @Test
+  public void getDrawCount() throws Exception {
+
+  }
+
+  @Test
+  public void getSounds() throws Exception {
+
+  }
+
+  @Test
+  public void getTimer() throws Exception {
+
+  }
+
+  @Test
+  public void setup() throws Exception {
+
+  }
+
 }
