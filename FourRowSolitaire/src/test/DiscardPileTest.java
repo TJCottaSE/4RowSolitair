@@ -1,5 +1,9 @@
 package test;
-
+/**
+ * Test the DiscardPile Class
+ * @author Thongphanh Duangboudda,
+ * 		   Nolan Miller
+ */
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
@@ -46,9 +50,13 @@ public class DiscardPileTest {
    		assertEquals(dp.getDrawCount(), 2);
   	}
 
+  	/**
+  	 * Test method to check number of viewable cards remaining
+  	 */
   	@Test
   	public void testGetNumViewableCards(){
 		// discardPile called push which set number of viewable to zero
+  		discardPile.setView(0);
 		assertEquals(0, discardPile.getNumViewableCards());
 		//add a card
 		discardPile.addCard(card);
@@ -57,12 +65,19 @@ public class DiscardPileTest {
 		assertEquals(2, discardPile.getNumViewableCards());
   	}
   	
+  	/**
+  	 * Test method to set number of viewable cards 
+  	 */
   	@Test
   	public void setView() {
 		discardPile.setView(4);
 		assertEquals(4, discardPile.getNumViewableCards());
   	}
   	
+  	/**
+  	 * Test ability to add cards to pile
+  	 * and test incrementing of cardsLeftFromDraw
+  	 */
   	@Test
   	public void addCard() {
 		Card returnedCard;
@@ -71,8 +86,12 @@ public class DiscardPileTest {
 		assertEquals(Card.HEARTS_SUIT, returnedCard.getSuit());
 		assertEquals(2, returnedCard.getFullNumber());
 		assertEquals(1, returnedCard.getNumber());
+		assertEquals(1, discardPile.getNumViewableCards());
   	}
 
+  	/**
+  	 * Test adding stack of cards to discard pile
+  	 */
   	@Test
   	public void addStack() {
   		DiscardPile dis = new DiscardPile(1);
@@ -90,6 +109,9 @@ public class DiscardPileTest {
 		//assertEquals(1, dis.pop().getFullNumber());
 	}
 
+  	/**
+  	 * Test ability to push new cards onto stack
+  	 */
   	@Test
   	public void pushCard() {
 		int cardNumber = 3;
@@ -105,6 +127,9 @@ public class DiscardPileTest {
 		
   	}
   	
+  	/**
+  	 * Test pushing stack of cards 
+  	 */
   	@Test
  	public void pushCardStack() {
 		DiscardPile dis = new DiscardPile(1);
@@ -118,6 +143,9 @@ public class DiscardPileTest {
 		assertEquals(cardStack, dis.push(cardStack));
   	}
   	
+  	/**
+  	 * Test popping card from pile
+  	 */
   	@Test
   	public void pop() {
   		discardPile.addCard(card);
@@ -126,12 +154,27 @@ public class DiscardPileTest {
 		assertEquals(Card.HEARTS_SUIT, poppedCard.getSuit());
 		assertEquals(2, poppedCard.getFullNumber());
 		assertEquals(1, poppedCard.getNumber());
+		
+		while(discardPile.length() > 0)
+			discardPile.pop();
+		
+		assertEquals(0, discardPile.getNumViewableCards());
   	}
   	
+  	/**
+  	 * Test undoPop() method, compare card to previously popped card
+  	 */
+  	@Test
   	public void testUndoPop(){
-  		throw new RuntimeException("Test not implemented");
+  		discardPile.addCard(card);
+  		
+  		discardPile.pop();
+  		assertEquals(discardPile.undoPop(), card);
   	}
   	
+  	/**
+  	 * Test getCardAtLocation() at a point
+  	 */
   	@Test
 	public void testGetCardAtLocationPoint() {
 		Point point = new Point(0,0);
@@ -139,12 +182,18 @@ public class DiscardPileTest {
 		assertEquals(Card.HEARTS_SUIT, discardPile.getCardAtLocation(point).getSuit());
   	}
 
+  	/**
+  	 * Tests checking whether a card is a valid move
+  	 */
   	@Test
   	public void isValidMoveCard() {
   		discardPile.addCard(card);
 		assertTrue(!discardPile.isValidMove(card));
   	}
 
+  	/**
+  	 * Test checking if a stack is a valid move
+  	 */
   	@Test
   	public void isValidMoveCardStack() {
   		assertFalse(discardPile.isValidMove(card));

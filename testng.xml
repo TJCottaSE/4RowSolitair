@@ -17,7 +17,7 @@
       <class name="test.SingleCellTest"/>
       <class name="test.SolitaireBoardTest"/>
       <class name="test.SolitaireLayoutTest"/>
-      <class name="test.SoolitairePanelTest"/>
+      <class name="test.SolitairePanelTest"/>
       <class name="test.WinScreenTest"/>
     </classes>
   </test> <!-- Test -->
