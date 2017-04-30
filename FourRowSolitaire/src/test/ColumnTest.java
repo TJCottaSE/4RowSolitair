@@ -11,8 +11,6 @@ import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNull;
 import static org.testng.Assert.assertTrue;
 
-import org.testng.annotations.*;
-
 import FourRowSolitaire.Card;
 import FourRowSolitaire.CardStack;
 import FourRowSolitaire.Column;
@@ -97,7 +95,7 @@ public class ColumnTest{
 	}
 	
 	/**
-	 * Test getting the available cards in the column
+	 * Test getting the available cards in the column 
 	 */
 	@Test
 	public void testGetAvailableCards(){

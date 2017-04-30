@@ -5,6 +5,9 @@ package test;
  */
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.assertNotNull;
+
+import java.awt.Graphics;
 
 import javax.swing.*;
 
@@ -28,8 +31,6 @@ public class SolitairePanelTest extends JPanel {
 		assertEquals(panel1.getBackGroundNumber(), panel2.getBackGroundNumber());
 		panel2.changeBackground(1);
 		assertNotEquals(panel1.getBackGroundNumber(), panel2.getBackGroundNumber());
-
-  }
-
+  	}
 }
 

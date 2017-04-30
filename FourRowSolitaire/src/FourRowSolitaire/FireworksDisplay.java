@@ -167,7 +167,13 @@ public class FireworksDisplay extends JPanel implements ActionListener
         }
     }
 
-    public void paint(Graphics g)
+	public void actionPerformed(ActionEvent e) {
+		// Only in place for testing
+		//Delete and activate Paint() below.
+		
+	}
+
+    /**public void paint(Graphics g)
     {
         super.paint(g);
         
@@ -473,7 +479,7 @@ public class FireworksDisplay extends JPanel implements ActionListener
         }
 
         //Shorter sets
-        /*//Set one
+        //Set one
         if(num <= FIREWORKS_TIME)
         {
             for(int i = 0; i < Math.ceil(NUM_FIREWORKS / 16.0); i++)
@@ -733,7 +739,7 @@ public class FireworksDisplay extends JPanel implements ActionListener
             }
 
             num += (4 * FIREWORKS_TIME + 4 * SET_DELAY);
-        }*/
+        }
     }
 
     public void actionPerformed(ActionEvent e)
@@ -760,14 +766,14 @@ public class FireworksDisplay extends JPanel implements ActionListener
             }
 
             //Shorter sets
-            /*num++;
+            num++;
 
             if(num > 5 * FIREWORKS_TIME + 4 * SET_DELAY)
             {
                 timer.stop();
             }
 
-            repaint();*/
+            repaint();
         }
-    }
+    }*/
 }

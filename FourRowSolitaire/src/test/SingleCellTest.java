@@ -52,7 +52,7 @@ public class SingleCellTest {
 	@Test
 	public void testGetCardAtLocationPoint() {
 		sc.push(card1);
-		AssertJUnit.assertEquals(card1, sc.getCardAtLocation(0));
+		AssertJUnit.assertEquals(card1, sc.getCardAtLocation(0)); 
 	}
 
 	/**

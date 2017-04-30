@@ -48,15 +48,13 @@ public class DiscardPileTest {
 
   	@Test
   	public void testGetNumViewableCards(){
-  		DiscardPile dis = new DiscardPile(2);
-  		System.out.println(" what the fuck number "+ discardPile.getNumViewableCards());
 		// discardPile called push which set number of viewable to zero
-		assertEquals(0, dis.getNumViewableCards());		
+		assertEquals(0, discardPile.getNumViewableCards());
 		//add a card
-		dis.addCard(card);		
-		assertEquals(1, dis.getNumViewableCards());
-		dis.addCard(card);
-		assertEquals(2, dis.getNumViewableCards());
+		discardPile.addCard(card);
+		assertEquals(1, discardPile.getNumViewableCards());
+		discardPile.addCard(card);
+		assertEquals(2, discardPile.getNumViewableCards());
   	}
   	
   	@Test

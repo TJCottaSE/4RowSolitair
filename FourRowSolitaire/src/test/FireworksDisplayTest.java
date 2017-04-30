@@ -28,14 +28,53 @@ public class FireworksDisplayTest {
   }
 
   @Test
-  public void FireworksDisplay() {
-	  
+  public void FireworksDisplay() { 
 	  assertEquals(fw.getBackground(), Color.BLACK);
-    
   }
 
   @Test
-  public void randomColor() {
-    assertFalse(fw.randomColor().equals(null));
+  public void randomColor() throws Exception {
+	  
+	  double rand = 0;
+	    if(rand <= .1)
+        {
+	    	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .2)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .3)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .4)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .5)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .6)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .7)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .8)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+        if(rand <= .9)
+        {
+        	assertFalse(fw.randomColor().equals(null));
+        }
+
+	  assertFalse(fw.randomColor().equals(null));
+	  
   }
+
 }

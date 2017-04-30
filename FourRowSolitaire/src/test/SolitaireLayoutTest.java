@@ -155,5 +155,4 @@ public class SolitaireLayoutTest {
 	  target.removeLayoutComponent(s13);
 	  target.removeLayoutComponent(s14);
   }
-  
 }

@@ -47,7 +47,7 @@ public class DeckTest {
 		AssertJUnit.assertNotNull(deckClass3.getDeck());
 	}
 
-	@Test
+	@Test 
 	public void testGetDeckLinkedListOfInteger() {
 		
 		Card card;

@@ -88,7 +88,7 @@ public class DealDeckTest {
   /**
    * Test hasDealsLeft 
    * compares numTimesThroughDeck to deckThroughLimit
-   * runs through deals, and checks that dealsleft hits 0
+   * runs through deals, and checks that deals left hits 0
    * 
    */
   @Test
@@ -224,6 +224,7 @@ public class DealDeckTest {
   public void setDifficulty() {
 	  // easy
 	  deck.setDifficulty(1);
+
 	  assertEquals(deck.getDeckThroughLimit(), 3);
 	  
 	  // medium
@@ -237,8 +238,7 @@ public class DealDeckTest {
 	  // increase draw count
 	  deck.setDrawCount(3);
 	  deck.setDifficulty(2);
-	  assertEquals(deck.getDeckThroughLimit(), 3);
-	  
+	  assertEquals(deck.getDeckThroughLimit(), 3);	  
   }
 
   /** 

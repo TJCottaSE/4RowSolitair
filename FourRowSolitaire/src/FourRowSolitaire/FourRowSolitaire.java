@@ -122,7 +122,7 @@ public class FourRowSolitaire extends SolitaireBoard implements ActionListener
             String inputLine = in.readLine();
             in.close();
 
-            //Sometimes reads an html document if disconnected from internet
+            //Sometimes reads an html document if disconnected from Internet
             if(!inputLine.contains("DOCTYPE") && !version.equals(inputLine))
             {
                 JOptionPane.showMessageDialog(this, "There is a newer version available, " +

@@ -2,12 +2,16 @@ package test;
 /**
  * Test the CardStack Class
  * @author Tony Cotta, Nolan Miller
+<<<<<<< HEAD
  */
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
+
+
+
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterMethod;
@@ -20,7 +24,7 @@ public class CardStackTest {
 	
 	CardStack stack = null;
 	Card black_5, red_4, black_3, red_2;
-	
+
 	@BeforeMethod
 	public void setUp() throws Exception {
 		stack = new CardStack();
@@ -198,6 +202,7 @@ public class CardStackTest {
 	 */
 	@Test
 	public void testGetCardAtLocationPoint() {	
+
 	}
 
 	/**
@@ -285,6 +290,7 @@ public class CardStackTest {
 	 */
 	@Test
 	public void testGetAvailableCards() {
+
 		Card card1 = new Card("Spades", 1, 1, 1);
 		Card card2 = new Card("Spades", 2, 1, 2);
 		Card card3 = new Card("Spades", 3, 1, 3);
@@ -298,3 +304,4 @@ public class CardStackTest {
 		assertEquals(newStack.peek().getFullNumber(), card4.getFullNumber());	
 	}
 }
+
