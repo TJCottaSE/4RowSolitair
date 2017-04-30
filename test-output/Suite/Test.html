@@ -1,0 +1,1016 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>110/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 30 03:27:46 EDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>27 seconds (27076 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.ChangeOptionsTest.ChangeOptions()'><b>ChangeOptions</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.ChangeOptions(ChangeOptionsTest.java:27)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17287888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17287888'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.ChangeOptions(ChangeOptionsTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.actionPerformed()'><b>actionPerformed</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.actionPerformed(ChangeOptionsTest.java:32)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9725596", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9725596'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.actionPerformed(ChangeOptionsTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.getAnimation()'><b>getAnimation</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getAnimation(ChangeOptionsTest.java:37)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10423460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10423460'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getAnimation(ChangeOptionsTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.getDifficulty()'><b>getDifficulty</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getDifficulty(ChangeOptionsTest.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20956888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20956888'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getDifficulty(ChangeOptionsTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.getDrawCount()'><b>getDrawCount</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getDrawCount(ChangeOptionsTest.java:47)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13834037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13834037'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getDrawCount(ChangeOptionsTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.getSounds()'><b>getSounds</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getSounds(ChangeOptionsTest.java:52)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5019863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5019863'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getSounds(ChangeOptionsTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.getTimer()'><b>getTimer</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getTimer(ChangeOptionsTest.java:57)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2554879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2554879'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getTimer(ChangeOptionsTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.SolitaireLayoutTest.minimumLayoutSize()'><b>minimumLayoutSize</b><br>Test class: test.SolitaireLayoutTest</td>
+<td><div><pre>org.testng.TestException: 
+Method SolitaireLayoutTest.minimumLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7225612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7225612'><pre>org.testng.TestException: 
+Method SolitaireLayoutTest.minimumLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.SolitaireLayoutTest@89484</td></tr>
+<tr>
+<td title='test.SolitaireLayoutTest.preferredLayoutSize()'><b>preferredLayoutSize</b><br>Test class: test.SolitaireLayoutTest</td>
+<td><div><pre>org.testng.TestException: 
+Method SolitaireLayoutTest.preferredLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17960520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17960520'><pre>org.testng.TestException: 
+Method SolitaireLayoutTest.preferredLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.SolitaireLayoutTest@89484</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.setup()'><b>setup</b><br>Test class: test.ChangeOptionsTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.setup(ChangeOptionsTest.java:62)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18778620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18778620'><pre>java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.setup(ChangeOptionsTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.DiscardPileTest.testUndoPop()'><b>testUndoPop</b><br>Test class: test.DiscardPileTest</td>
+<td><div><pre>java.lang.RuntimeException: Test not implemented
+	at test.DiscardPileTest.testUndoPop(DiscardPileTest.java:133)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1988550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1988550'><pre>java.lang.RuntimeException: Test not implemented
+	at test.DiscardPileTest.testUndoPop(DiscardPileTest.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.AcePileTest.AcePile()'><b>AcePile</b><br>Test class: test.AcePileTest</td>
+<td></td>
+<td>0</td>
+<td>test.AcePileTest@c2d629</td></tr>
+<tr>
+<td title='test.ChangeAppearanceTest.ChangeAppearance()'><b>ChangeAppearance</b><br>Test class: test.ChangeAppearanceTest</td>
+<td></td>
+<td>0</td>
+<td>test.ChangeAppearanceTest@8dbf56</td></tr>
+<tr>
+<td title='test.DealDeckTest.DealDeck()'><b>DealDeck</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.DiscardPileTest.DiscardPile()'><b>DiscardPile</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.FireworksDisplayTest.FireworksDisplay()'><b>FireworksDisplay</b><br>Test class: test.FireworksDisplayTest</td>
+<td></td>
+<td>0</td>
+<td>test.FireworksDisplayTest@8eb310</td></tr>
+<tr>
+<td title='test.FourRowSolitaireTest.FourRowSolitaire()'><b>FourRowSolitaire</b><br>Test class: test.FourRowSolitaireTest</td>
+<td></td>
+<td>0</td>
+<td>test.FourRowSolitaireTest@3db1f</td></tr>
+<tr>
+<td title='test.SolitaireLayoutTest.SolitaireLayout()'><b>SolitaireLayout</b><br>Test class: test.SolitaireLayoutTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireLayoutTest@89484</td></tr>
+<tr>
+<td title='test.SolitairePanelTest.SolitairePanel()'><b>SolitairePanel</b><br>Test class: test.SolitairePanelTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</td></tr>
+<tr>
+<td title='test.FourRowSolitaireTest.actionPerformed()'><b>actionPerformed</b><br>Test class: test.FourRowSolitaireTest</td>
+<td></td>
+<td>0</td>
+<td>test.FourRowSolitaireTest@3db1f</td></tr>
+<tr>
+<td title='test.ChangeAppearanceTest.actionPerformed()'><b>actionPerformed</b><br>Test class: test.ChangeAppearanceTest</td>
+<td></td>
+<td>0</td>
+<td>test.ChangeAppearanceTest@8dbf56</td></tr>
+<tr>
+<td title='test.DiscardPileTest.addCard()'><b>addCard</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.SolitaireLayoutTest.addLayoutComponent()'><b>addLayoutComponent</b><br>Test class: test.SolitaireLayoutTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireLayoutTest@89484</td></tr>
+<tr>
+<td title='test.DiscardPileTest.addStack()'><b>addStack</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.CardTest.cardImageTest()'><b>cardImageTest</b><br>Test class: test.CardTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardTest@977098</td></tr>
+<tr>
+<td title='test.SolitairePanelTest.changeBackground()'><b>changeBackground</b><br>Test class: test.SolitairePanelTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</td></tr>
+<tr>
+<td title='test.FourRowSolitaireTest.checkForUpdate()'><b>checkForUpdate</b><br>Test class: test.FourRowSolitaireTest</td>
+<td></td>
+<td>0</td>
+<td>test.FourRowSolitaireTest@3db1f</td></tr>
+<tr>
+<td title='test.CardTest.cloneTest()'><b>cloneTest</b><br>Test class: test.CardTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardTest@977098</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.createBoard()'><b>createBoard</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.dealOutCustomBoard()'><b>dealOutCustomBoard</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.CardTest.faceUpTest()'><b>faceUpTest</b><br>Test class: test.CardTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardTest@977098</td></tr>
+<tr>
+<td title='test.ChangeAppearanceTest.getBackgroundNumber()'><b>getBackgroundNumber</b><br>Test class: test.ChangeAppearanceTest</td>
+<td></td>
+<td>0</td>
+<td>test.ChangeAppearanceTest@8dbf56</td></tr>
+<tr>
+<td title='test.ChangeAppearanceTest.getDeckNumber()'><b>getDeckNumber</b><br>Test class: test.ChangeAppearanceTest</td>
+<td></td>
+<td>0</td>
+<td>test.ChangeAppearanceTest@8dbf56</td></tr>
+<tr>
+<td title='test.DealDeckTest.getDeckThroughs()'><b>getDeckThroughs</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.getHint()'><b>getHint</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.getTimerNextGameStatus()'><b>getTimerNextGameStatus</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.CardTest.gettersTest()'><b>gettersTest</b><br>Test class: test.CardTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardTest@977098</td></tr>
+<tr>
+<td title='test.DealDeckTest.hasDealsLeft()'><b>hasDealsLeft</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.CardTest.highlightTest()'><b>highlightTest</b><br>Test class: test.CardTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardTest@977098</td></tr>
+<tr>
+<td title='test.DiscardPileTest.isValidMoveCard()'><b>isValidMoveCard</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.DealDeckTest.isValidMoveCard()'><b>isValidMoveCard</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.DiscardPileTest.isValidMoveCardStack()'><b>isValidMoveCardStack</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.DealDeckTest.isValidMoveCardStack()'><b>isValidMoveCardStack</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.SolitaireLayoutTest.layoutContainer()'><b>layoutContainer</b><br>Test class: test.SolitaireLayoutTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireLayoutTest@89484</td></tr>
+<tr>
+<td title='test.FourRowSolitaireTest.loadData()'><b>loadData</b><br>Test class: test.FourRowSolitaireTest</td>
+<td></td>
+<td>0</td>
+<td>test.FourRowSolitaireTest@3db1f</td></tr>
+<tr>
+<td title='test.FourRowSolitaireTest.main()'><b>main</b><br>Test class: test.FourRowSolitaireTest</td>
+<td></td>
+<td>0</td>
+<td>test.FourRowSolitaireTest@3db1f</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.newGame()'><b>newGame</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>1</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitairePanelTest.paintComponent()'><b>paintComponent</b><br>Test class: test.SolitairePanelTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</td></tr>
+<tr>
+<td title='test.DiscardPileTest.pop()'><b>pop</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.DealDeckTest.pop()'><b>pop</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.DiscardPileTest.pushCard()'><b>pushCard</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.DiscardPileTest.pushCardStack()'><b>pushCardStack</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.FireworksDisplayTest.randomColor()'><b>randomColor</b><br>Test class: test.FireworksDisplayTest</td>
+<td></td>
+<td>0</td>
+<td>test.FireworksDisplayTest@8eb310</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.recordGame()'><b>recordGame</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireLayoutTest.removeLayoutComponent()'><b>removeLayoutComponent</b><br>Test class: test.SolitaireLayoutTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireLayoutTest@89484</td></tr>
+<tr>
+<td title='test.DealDeckTest.reset()'><b>reset</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.resetStats()'><b>resetStats</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.saveOptions()'><b>saveOptions</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setAppearance()'><b>setAppearance</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setBackgroundNumber()'><b>setBackgroundNumber</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.DealDeckTest.setDeck()'><b>setDeck</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setDeckNumber()'><b>setDeckNumber</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.DealDeckTest.setDeckThroughs()'><b>setDeckThroughs</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setDeckThroughs()'><b>setDeckThroughs</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.DealDeckTest.setDifficulty()'><b>setDifficulty</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setDifficulty()'><b>setDifficulty</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.DealDeckTest.setDrawCount()'><b>setDrawCount</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setDrawCount()'><b>setDrawCount</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setNewDifficulty()'><b>setNewDifficulty</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setNewDrawCount()'><b>setNewDrawCount</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setTimerStatus()'><b>setTimerStatus</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>1</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.DiscardPileTest.setView()'><b>setView</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setWinAnimationStatus()'><b>setWinAnimationStatus</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.setWinSoundsStatus()'><b>setWinSoundsStatus</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.ChangeAppearanceTest.setup()'><b>setup</b><br>Test class: test.ChangeAppearanceTest</td>
+<td></td>
+<td>0</td>
+<td>test.ChangeAppearanceTest@8dbf56</td></tr>
+<tr>
+<td title='test.CardTest.test()'><b>test</b><br>Test class: test.CardTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardTest@977098</td></tr>
+<tr>
+<td title='test.CardStackTest.testAddCard()'><b>testAddCard</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testAddStack()'><b>testAddStack</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.DeckTest.testDeck()'><b>testDeck</b><br>Test class: test.DeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DeckTest@11483fd</td></tr>
+<tr>
+<td title='test.ColumnTest.testGetAvailableCards()'><b>testGetAvailableCards</b><br>Test class: test.ColumnTest</td>
+<td></td>
+<td>0</td>
+<td>test.ColumnTest@1fd4cba</td></tr>
+<tr>
+<td title='test.CardStackTest.testGetAvailableCards()'><b>testGetAvailableCards</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testGetBottom()'><b>testGetBottom</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testGetCardAtLocationIntIndex()'><b>testGetCardAtLocationIntIndex</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testGetCardAtLocationPoint()'><b>testGetCardAtLocationPoint</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.DiscardPileTest.testGetCardAtLocationPoint()'><b>testGetCardAtLocationPoint</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.SingleCellTest.testGetCardAtLocationPoint()'><b>testGetCardAtLocationPoint</b><br>Test class: test.SingleCellTest</td>
+<td></td>
+<td>0</td>
+<td>test.SingleCellTest@bc9573</td></tr>
+<tr>
+<td title='test.AcePileTest.testGetCardAtLocationPoint()'><b>testGetCardAtLocationPoint</b><br>Test class: test.AcePileTest</td>
+<td></td>
+<td>0</td>
+<td>test.AcePileTest@c2d629</td></tr>
+<tr>
+<td title='test.DeckTest.testGetDeck()'><b>testGetDeck</b><br>Test class: test.DeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DeckTest@11483fd</td></tr>
+<tr>
+<td title='test.DeckTest.testGetDeckLinkedListOfInteger()'><b>testGetDeckLinkedListOfInteger</b><br>Test class: test.DeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DeckTest@11483fd</td></tr>
+<tr>
+<td title='test.DeckTest.testGetDeckNumber()'><b>testGetDeckNumber</b><br>Test class: test.DeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DeckTest@11483fd</td></tr>
+<tr>
+<td title='test.DiscardPileTest.testGetNumViewableCards()'><b>testGetNumViewableCards</b><br>Test class: test.DiscardPileTest</td>
+<td></td>
+<td>0</td>
+<td>test.DiscardPileTest@1fec2f9</td></tr>
+<tr>
+<td title='test.CardStackTest.testGetStackCard()'><b>testGetStackCard</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testGetStackInt()'><b>testGetStackInt</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testIsEmpty()'><b>testIsEmpty</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.ColumnTest.testIsValidMove()'><b>testIsValidMove</b><br>Test class: test.ColumnTest</td>
+<td></td>
+<td>0</td>
+<td>test.ColumnTest@1fd4cba</td></tr>
+<tr>
+<td title='test.CardStackTest.testIsValidMoveCard()'><b>testIsValidMoveCard</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.SingleCellTest.testIsValidMoveCard()'><b>testIsValidMoveCard</b><br>Test class: test.SingleCellTest</td>
+<td></td>
+<td>0</td>
+<td>test.SingleCellTest@bc9573</td></tr>
+<tr>
+<td title='test.AcePileTest.testIsValidMoveCard()'><b>testIsValidMoveCard</b><br>Test class: test.AcePileTest</td>
+<td></td>
+<td>0</td>
+<td>test.AcePileTest@c2d629</td></tr>
+<tr>
+<td title='test.CardStackTest.testIsValidMoveCardStack()'><b>testIsValidMoveCardStack</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.SingleCellTest.testIsValidMoveCardStack()'><b>testIsValidMoveCardStack</b><br>Test class: test.SingleCellTest</td>
+<td></td>
+<td>0</td>
+<td>test.SingleCellTest@bc9573</td></tr>
+<tr>
+<td title='test.AcePileTest.testIsValidMoveCardStack()'><b>testIsValidMoveCardStack</b><br>Test class: test.AcePileTest</td>
+<td></td>
+<td>0</td>
+<td>test.AcePileTest@c2d629</td></tr>
+<tr>
+<td title='test.CardStackTest.testLength()'><b>testLength</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testPeek()'><b>testPeek</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testPop()'><b>testPop</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testPopCardStack()'><b>testPopCardStack</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.ColumnTest.testPush()'><b>testPush</b><br>Test class: test.ColumnTest</td>
+<td></td>
+<td>0</td>
+<td>test.ColumnTest@1fd4cba</td></tr>
+<tr>
+<td title='test.CardStackTest.testPushCard()'><b>testPushCard</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.SingleCellTest.testPushCard()'><b>testPushCard</b><br>Test class: test.SingleCellTest</td>
+<td></td>
+<td>0</td>
+<td>test.SingleCellTest@bc9573</td></tr>
+<tr>
+<td title='test.AcePileTest.testPushCard()'><b>testPushCard</b><br>Test class: test.AcePileTest</td>
+<td></td>
+<td>0</td>
+<td>test.AcePileTest@c2d629</td></tr>
+<tr>
+<td title='test.CardStackTest.testPushCardStack()'><b>testPushCardStack</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.CardStackTest.testSearch()'><b>testSearch</b><br>Test class: test.CardStackTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardStackTest@10f2466</td></tr>
+<tr>
+<td title='test.DeckTest.testShuffle()'><b>testShuffle</b><br>Test class: test.DeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DeckTest@11483fd</td></tr>
+<tr>
+<td title='test.ColumnTest.testStackIsValidMove()'><b>testStackIsValidMove</b><br>Test class: test.ColumnTest</td>
+<td></td>
+<td>0</td>
+<td>test.ColumnTest@1fd4cba</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.test_actionPerformed_A$ActionEvent()'><b>test_actionPerformed_A$ActionEvent</b><br>Test class: test.ChangeOptionsTest</td>
+<td></td>
+<td>5</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.test_instantiation()'><b>test_instantiation</b><br>Test class: test.ChangeOptionsTest</td>
+<td></td>
+<td>4</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.WinScreenTest.test_instantiation()'><b>test_instantiation</b><br>Test class: test.WinScreenTest</td>
+<td></td>
+<td>0</td>
+<td>test.WinScreenTest@13b01ef</td></tr>
+<tr>
+<td title='test.ChangeOptionsTest.test_type()'><b>test_type</b><br>Test class: test.ChangeOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>test.ChangeOptionsTest@10390b9</td></tr>
+<tr>
+<td title='test.WinScreenTest.test_type()'><b>test_type</b><br>Test class: test.WinScreenTest</td>
+<td></td>
+<td>0</td>
+<td>test.WinScreenTest@13b01ef</td></tr>
+<tr>
+<td title='test.SolitaireBoardTest.undoMove()'><b>undoMove</b><br>Test class: test.SolitaireBoardTest</td>
+<td></td>
+<td>0</td>
+<td>test.SolitaireBoardTest@1fee662</td></tr>
+<tr>
+<td title='test.DealDeckTest.undoPop()'><b>undoPop</b><br>Test class: test.DealDeckTest</td>
+<td></td>
+<td>0</td>
+<td>test.DealDeckTest@90b9fa</td></tr>
+<tr>
+<td title='test.CardTest.validSuitTest()'><b>validSuitTest</b><br>Test class: test.CardTest</td>
+<td></td>
+<td>0</td>
+<td>test.CardTest@977098</td></tr>
+</table><p>
+</body>
+</html>

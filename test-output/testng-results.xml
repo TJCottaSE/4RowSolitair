@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="11" ignored="0" total="121" passed="110">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27076" started-at="2017-04-30T07:27:46Z" finished-at="2017-04-30T07:28:13Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="27076" started-at="2017-04-30T07:27:46Z" finished-at="2017-04-30T07:28:13Z">
+      <class name="test.SingleCellTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SingleCellTest@bc9573]" name="setUp" is-config="true" duration-ms="10" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetCardAtLocationPoint()[pri:0, instance:test.SingleCellTest@bc9573]" name="testGetCardAtLocationPoint" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardAtLocationPoint -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SingleCellTest@bc9573]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SingleCellTest@bc9573]" name="setUp" is-config="true" duration-ms="10" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testIsValidMoveCard()[pri:0, instance:test.SingleCellTest@bc9573]" name="testIsValidMoveCard" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SingleCellTest@bc9573]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SingleCellTest@bc9573]" name="setUp" is-config="true" duration-ms="8" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testIsValidMoveCardStack()[pri:0, instance:test.SingleCellTest@bc9573]" name="testIsValidMoveCardStack" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCardStack -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SingleCellTest@bc9573]" name="setUp" is-config="true" duration-ms="9" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SingleCellTest@bc9573]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testPushCard()[pri:0, instance:test.SingleCellTest@bc9573]" name="testPushCard" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPushCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SingleCellTest@bc9573]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.SingleCellTest -->
+      <class name="test.SolitaireLayoutTest">
+        <test-method status="PASS" signature="SolitaireLayout()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="SolitaireLayout" duration-ms="2" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SolitaireLayout -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="addLayoutComponent()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="addLayoutComponent" duration-ms="3" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLayoutComponent -->
+        <test-method status="PASS" signature="layoutContainer()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="layoutContainer" duration-ms="5" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- layoutContainer -->
+        <test-method status="FAIL" signature="minimumLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="minimumLayoutSize" duration-ms="1" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method SolitaireLayoutTest.minimumLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method SolitaireLayoutTest.minimumLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minimumLayoutSize -->
+        <test-method status="FAIL" signature="preferredLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="preferredLayoutSize" duration-ms="2" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method SolitaireLayoutTest.preferredLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method SolitaireLayoutTest.preferredLayoutSize()[pri:0, instance:test.SolitaireLayoutTest@89484] should have thrown an exception of type class java.lang.UnsupportedOperationException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preferredLayoutSize -->
+        <test-method status="PASS" signature="removeLayoutComponent()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="removeLayoutComponent" duration-ms="2" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeLayoutComponent -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.SolitaireLayoutTest@89484]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.SolitaireLayoutTest -->
+      <class name="test.CardStackTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="17" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddCard()[pri:0, instance:test.CardStackTest@10f2466]" name="testAddCard" duration-ms="6" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="16" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddStack()[pri:0, instance:test.CardStackTest@10f2466]" name="testAddStack" duration-ms="2" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddStack -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="16" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetAvailableCards()[pri:0, instance:test.CardStackTest@10f2466]" name="testGetAvailableCards" duration-ms="18" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAvailableCards -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetBottom()[pri:0, instance:test.CardStackTest@10f2466]" name="testGetBottom" duration-ms="18" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBottom -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="16" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetCardAtLocationIntIndex()[pri:0, instance:test.CardStackTest@10f2466]" name="testGetCardAtLocationIntIndex" duration-ms="14" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardAtLocationIntIndex -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetCardAtLocationPoint()[pri:0, instance:test.CardStackTest@10f2466]" name="testGetCardAtLocationPoint" duration-ms="2" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardAtLocationPoint -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetStackCard()[pri:0, instance:test.CardStackTest@10f2466]" name="testGetStackCard" duration-ms="40" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStackCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetStackInt()[pri:0, instance:test.CardStackTest@10f2466]" name="testGetStackInt" duration-ms="16" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStackInt -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="17" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:test.CardStackTest@10f2466]" name="testIsEmpty" duration-ms="5" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsEmpty -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="16" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testIsValidMoveCard()[pri:0, instance:test.CardStackTest@10f2466]" name="testIsValidMoveCard" duration-ms="5" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCard -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testIsValidMoveCardStack()[pri:0, instance:test.CardStackTest@10f2466]" name="testIsValidMoveCardStack" duration-ms="1" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCardStack -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="18" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLength()[pri:0, instance:test.CardStackTest@10f2466]" name="testLength" duration-ms="6" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLength -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="19" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPeek()[pri:0, instance:test.CardStackTest@10f2466]" name="testPeek" duration-ms="10" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPeek -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="14" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPop()[pri:0, instance:test.CardStackTest@10f2466]" name="testPop" duration-ms="6" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPop -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="16" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testPopCardStack()[pri:0, instance:test.CardStackTest@10f2466]" name="testPopCardStack" duration-ms="1" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPopCardStack -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPushCard()[pri:0, instance:test.CardStackTest@10f2466]" name="testPushCard" duration-ms="7" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPushCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPushCardStack()[pri:0, instance:test.CardStackTest@10f2466]" name="testPushCardStack" duration-ms="9" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPushCardStack -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardStackTest@10f2466]" name="setUp" is-config="true" duration-ms="15" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:test.CardStackTest@10f2466]" name="testSearch" duration-ms="16" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardStackTest@10f2466]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CardStackTest -->
+      <class name="test.FourRowSolitaireTest">
+        <test-method status="PASS" signature="FourRowSolitaire()[pri:0, instance:test.FourRowSolitaireTest@3db1f]" name="FourRowSolitaire" duration-ms="582" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FourRowSolitaire -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.FourRowSolitaireTest@3db1f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="actionPerformed()[pri:0, instance:test.FourRowSolitaireTest@3db1f]" name="actionPerformed" duration-ms="21" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actionPerformed -->
+        <test-method status="PASS" signature="checkForUpdate()[pri:0, instance:test.FourRowSolitaireTest@3db1f]" name="checkForUpdate" duration-ms="675" started-at="2017-04-30T03:27:50Z" finished-at="2017-04-30T03:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkForUpdate -->
+        <test-method status="PASS" signature="loadData()[pri:0, instance:test.FourRowSolitaireTest@3db1f]" name="loadData" duration-ms="611" started-at="2017-04-30T03:27:51Z" finished-at="2017-04-30T03:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadData -->
+        <test-method status="PASS" signature="main()[pri:0, instance:test.FourRowSolitaireTest@3db1f]" name="main" duration-ms="789" started-at="2017-04-30T03:27:51Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.FourRowSolitaireTest@3db1f]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.FourRowSolitaireTest -->
+      <class name="test.DeckTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.DeckTest@11483fd]" name="setUp" is-config="true" duration-ms="553" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeck()[pri:0, instance:test.DeckTest@11483fd]" name="testDeck" duration-ms="2" started-at="2017-04-30T03:27:47Z" finished-at="2017-04-30T03:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeck -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.DeckTest@11483fd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:47Z" finished-at="2017-04-30T03:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.DeckTest@11483fd]" name="setUp" is-config="true" duration-ms="519" started-at="2017-04-30T03:27:47Z" finished-at="2017-04-30T03:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetDeck()[pri:0, instance:test.DeckTest@11483fd]" name="testGetDeck" duration-ms="4" started-at="2017-04-30T03:27:47Z" finished-at="2017-04-30T03:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeck -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.DeckTest@11483fd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:47Z" finished-at="2017-04-30T03:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.DeckTest@11483fd]" name="setUp" is-config="true" duration-ms="632" started-at="2017-04-30T03:27:47Z" finished-at="2017-04-30T03:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetDeckLinkedListOfInteger()[pri:0, instance:test.DeckTest@11483fd]" name="testGetDeckLinkedListOfInteger" duration-ms="14" started-at="2017-04-30T03:27:48Z" finished-at="2017-04-30T03:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeckLinkedListOfInteger -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.DeckTest@11483fd]" name="tearDown" is-config="true" duration-ms="2" started-at="2017-04-30T03:27:48Z" finished-at="2017-04-30T03:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.DeckTest@11483fd]" name="setUp" is-config="true" duration-ms="586" started-at="2017-04-30T03:27:48Z" finished-at="2017-04-30T03:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetDeckNumber()[pri:0, instance:test.DeckTest@11483fd]" name="testGetDeckNumber" duration-ms="2" started-at="2017-04-30T03:27:48Z" finished-at="2017-04-30T03:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeckNumber -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.DeckTest@11483fd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:48Z" finished-at="2017-04-30T03:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.DeckTest@11483fd]" name="setUp" is-config="true" duration-ms="578" started-at="2017-04-30T03:27:48Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testShuffle()[pri:0, instance:test.DeckTest@11483fd]" name="testShuffle" duration-ms="1" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShuffle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.DeckTest@11483fd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:49Z" finished-at="2017-04-30T03:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.DeckTest -->
+      <class name="test.SolitairePanelTest">
+        <test-method status="PASS" signature="SolitairePanel()[pri:0, instance:test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="SolitairePanel" duration-ms="2" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SolitairePanel -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="changeBackground()[pri:0, instance:test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="changeBackground" duration-ms="25" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeBackground -->
+        <test-method status="PASS" signature="paintComponent()[pri:0, instance:test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="paintComponent" duration-ms="2" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paintComponent -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.SolitairePanelTest[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.SolitairePanelTest -->
+      <class name="test.ColumnTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@1fd4cba]" name="setUp" is-config="true" duration-ms="30" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetAvailableCards()[pri:0, instance:test.ColumnTest@1fd4cba]" name="testGetAvailableCards" duration-ms="31" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAvailableCards -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@1fd4cba]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@1fd4cba]" name="setUp" is-config="true" duration-ms="19" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testIsValidMove()[pri:0, instance:test.ColumnTest@1fd4cba]" name="testIsValidMove" duration-ms="2" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMove -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@1fd4cba]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@1fd4cba]" name="setUp" is-config="true" duration-ms="20" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPush()[pri:0, instance:test.ColumnTest@1fd4cba]" name="testPush" duration-ms="1" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPush -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@1fd4cba]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ColumnTest@1fd4cba]" name="setUp" is-config="true" duration-ms="18" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testStackIsValidMove()[pri:0, instance:test.ColumnTest@1fd4cba]" name="testStackIsValidMove" duration-ms="2" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStackIsValidMove -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ColumnTest@1fd4cba]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:46Z" finished-at="2017-04-30T03:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.ColumnTest -->
+      <class name="test.SolitaireBoardTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="createBoard()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="createBoard" duration-ms="547" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBoard -->
+        <test-method status="PASS" signature="dealOutCustomBoard()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="dealOutCustomBoard" duration-ms="2" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dealOutCustomBoard -->
+        <test-method status="PASS" signature="getHint()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="getHint" duration-ms="174" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHint -->
+        <test-method status="PASS" signature="getTimerNextGameStatus()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="getTimerNextGameStatus" duration-ms="187" started-at="2017-04-30T03:28:07Z" finished-at="2017-04-30T03:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTimerNextGameStatus -->
+        <test-method status="PASS" signature="newGame()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="newGame" duration-ms="1059" started-at="2017-04-30T03:28:07Z" finished-at="2017-04-30T03:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newGame -->
+        <test-method status="PASS" signature="recordGame()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="recordGame" duration-ms="2" started-at="2017-04-30T03:28:08Z" finished-at="2017-04-30T03:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordGame -->
+        <test-method status="PASS" signature="resetStats()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="resetStats" duration-ms="214" started-at="2017-04-30T03:28:08Z" finished-at="2017-04-30T03:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetStats -->
+        <test-method status="PASS" signature="saveOptions()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="saveOptions" duration-ms="205" started-at="2017-04-30T03:28:08Z" finished-at="2017-04-30T03:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveOptions -->
+        <test-method status="PASS" signature="setAppearance()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setAppearance" duration-ms="655" started-at="2017-04-30T03:28:08Z" finished-at="2017-04-30T03:28:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setAppearance -->
+        <test-method status="PASS" signature="setBackgroundNumber()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setBackgroundNumber" duration-ms="216" started-at="2017-04-30T03:28:09Z" finished-at="2017-04-30T03:28:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBackgroundNumber -->
+        <test-method status="PASS" signature="setDeckNumber()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setDeckNumber" duration-ms="217" started-at="2017-04-30T03:28:09Z" finished-at="2017-04-30T03:28:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDeckNumber -->
+        <test-method status="PASS" signature="setDeckThroughs()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setDeckThroughs" duration-ms="245" started-at="2017-04-30T03:28:09Z" finished-at="2017-04-30T03:28:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDeckThroughs -->
+        <test-method status="PASS" signature="setDifficulty()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setDifficulty" duration-ms="240" started-at="2017-04-30T03:28:10Z" finished-at="2017-04-30T03:28:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDifficulty -->
+        <test-method status="PASS" signature="setDrawCount()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setDrawCount" duration-ms="238" started-at="2017-04-30T03:28:10Z" finished-at="2017-04-30T03:28:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDrawCount -->
+        <test-method status="PASS" signature="setNewDifficulty()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setNewDifficulty" duration-ms="257" started-at="2017-04-30T03:28:10Z" finished-at="2017-04-30T03:28:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewDifficulty -->
+        <test-method status="PASS" signature="setNewDrawCount()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setNewDrawCount" duration-ms="234" started-at="2017-04-30T03:28:10Z" finished-at="2017-04-30T03:28:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewDrawCount -->
+        <test-method status="PASS" signature="setTimerStatus()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setTimerStatus" duration-ms="1976" started-at="2017-04-30T03:28:10Z" finished-at="2017-04-30T03:28:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTimerStatus -->
+        <test-method status="PASS" signature="setWinAnimationStatus()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setWinAnimationStatus" duration-ms="265" started-at="2017-04-30T03:28:12Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setWinAnimationStatus -->
+        <test-method status="PASS" signature="setWinSoundsStatus()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="setWinSoundsStatus" duration-ms="233" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setWinSoundsStatus -->
+        <test-method status="PASS" signature="undoMove()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="undoMove" duration-ms="1" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- undoMove -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.SolitaireBoardTest@1fee662]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:13Z" finished-at="2017-04-30T03:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.SolitaireBoardTest -->
+      <class name="test.AcePileTest">
+        <test-method status="PASS" signature="AcePile()[pri:0, instance:test.AcePileTest@c2d629]" name="AcePile" duration-ms="2" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AcePile -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.AcePileTest@c2d629]" name="setUp" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetCardAtLocationPoint()[pri:0, instance:test.AcePileTest@c2d629]" name="testGetCardAtLocationPoint" duration-ms="6" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardAtLocationPoint -->
+        <test-method status="PASS" signature="testIsValidMoveCard()[pri:0, instance:test.AcePileTest@c2d629]" name="testIsValidMoveCard" duration-ms="14" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCard -->
+        <test-method status="PASS" signature="testIsValidMoveCardStack()[pri:0, instance:test.AcePileTest@c2d629]" name="testIsValidMoveCardStack" duration-ms="1" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsValidMoveCardStack -->
+        <test-method status="PASS" signature="testPushCard()[pri:0, instance:test.AcePileTest@c2d629]" name="testPushCard" duration-ms="12" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPushCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.AcePileTest@c2d629]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AcePileTest -->
+      <class name="test.ChangeOptionsTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="ChangeOptions()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="ChangeOptions" duration-ms="2" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.ChangeOptions(ChangeOptionsTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeOptions -->
+        <test-method status="FAIL" signature="actionPerformed()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="actionPerformed" duration-ms="2" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.actionPerformed(ChangeOptionsTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actionPerformed -->
+        <test-method status="FAIL" signature="getAnimation()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="getAnimation" duration-ms="1" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getAnimation(ChangeOptionsTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAnimation -->
+        <test-method status="FAIL" signature="getDifficulty()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="getDifficulty" duration-ms="1" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getDifficulty(ChangeOptionsTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDifficulty -->
+        <test-method status="FAIL" signature="getDrawCount()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="getDrawCount" duration-ms="1" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getDrawCount(ChangeOptionsTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDrawCount -->
+        <test-method status="FAIL" signature="getSounds()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="getSounds" duration-ms="2" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getSounds(ChangeOptionsTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSounds -->
+        <test-method status="FAIL" signature="getTimer()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="getTimer" duration-ms="1" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.getTimer(ChangeOptionsTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTimer -->
+        <test-method status="FAIL" signature="setup()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="setup" duration-ms="2" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.ChangeOptionsTest.setup(ChangeOptionsTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_actionPerformed_A$ActionEvent()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="test_actionPerformed_A$ActionEvent" duration-ms="5992" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_actionPerformed_A$ActionEvent -->
+        <test-method status="PASS" signature="test_instantiation()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="test_instantiation" duration-ms="4540" started-at="2017-04-30T03:27:59Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_instantiation -->
+        <test-method status="PASS" signature="test_type()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="test_type" duration-ms="1" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_type -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.ChangeOptionsTest@10390b9]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.ChangeOptionsTest -->
+      <class name="test.WinScreenTest">
+        <test-method status="PASS" signature="test_instantiation()[pri:0, instance:test.WinScreenTest@13b01ef]" name="test_instantiation" duration-ms="536" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_instantiation -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.WinScreenTest@13b01ef]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="test_type()[pri:0, instance:test.WinScreenTest@13b01ef]" name="test_type" duration-ms="1" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_type -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.WinScreenTest@13b01ef]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:06Z" finished-at="2017-04-30T03:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.WinScreenTest -->
+      <class name="test.ChangeAppearanceTest">
+        <test-method status="PASS" signature="ChangeAppearance()[pri:0, instance:test.ChangeAppearanceTest@8dbf56]" name="ChangeAppearance" duration-ms="1" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeAppearance -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.ChangeAppearanceTest@8dbf56]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="actionPerformed()[pri:0, instance:test.ChangeAppearanceTest@8dbf56]" name="actionPerformed" duration-ms="2" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actionPerformed -->
+        <test-method status="PASS" signature="getBackgroundNumber()[pri:0, instance:test.ChangeAppearanceTest@8dbf56]" name="getBackgroundNumber" duration-ms="1" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBackgroundNumber -->
+        <test-method status="PASS" signature="getDeckNumber()[pri:0, instance:test.ChangeAppearanceTest@8dbf56]" name="getDeckNumber" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDeckNumber -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.ChangeAppearanceTest@8dbf56]" name="setup" duration-ms="1" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.ChangeAppearanceTest@8dbf56]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.ChangeAppearanceTest -->
+      <class name="test.DealDeckTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="15" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="DealDeck()[pri:0, instance:test.DealDeckTest@90b9fa]" name="DealDeck" duration-ms="1" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DealDeck -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="13" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="getDeckThroughs()[pri:0, instance:test.DealDeckTest@90b9fa]" name="getDeckThroughs" duration-ms="1" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDeckThroughs -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="12" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="hasDealsLeft()[pri:0, instance:test.DealDeckTest@90b9fa]" name="hasDealsLeft" duration-ms="811" started-at="2017-04-30T03:28:03Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hasDealsLeft -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="15" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="isValidMoveCard()[pri:0, instance:test.DealDeckTest@90b9fa]" name="isValidMoveCard" duration-ms="20" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidMoveCard -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="13" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="isValidMoveCardStack()[pri:0, instance:test.DealDeckTest@90b9fa]" name="isValidMoveCardStack" duration-ms="20" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidMoveCardStack -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="12" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="pop()[pri:0, instance:test.DealDeckTest@90b9fa]" name="pop" duration-ms="479" started-at="2017-04-30T03:28:04Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pop -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="17" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="reset()[pri:0, instance:test.DealDeckTest@90b9fa]" name="reset" duration-ms="1" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="16" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setDeck()[pri:0, instance:test.DealDeckTest@90b9fa]" name="setDeck" duration-ms="14" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDeck -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="12" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="setDeckThroughs()[pri:0, instance:test.DealDeckTest@90b9fa]" name="setDeckThroughs" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDeckThroughs -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="11" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setDifficulty()[pri:0, instance:test.DealDeckTest@90b9fa]" name="setDifficulty" duration-ms="1" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDifficulty -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="12" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="setDrawCount()[pri:0, instance:test.DealDeckTest@90b9fa]" name="setDrawCount" duration-ms="22" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDrawCount -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="beforeClass" is-config="true" duration-ms="12" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="undoPop()[pri:0, instance:test.DealDeckTest@90b9fa]" name="undoPop" duration-ms="500" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- undoPop -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.DealDeckTest@90b9fa]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:28:05Z" finished-at="2017-04-30T03:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.DealDeckTest -->
+      <class name="test.FireworksDisplayTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.FireworksDisplayTest@8eb310]" name="beforeClass" is-config="true" duration-ms="3" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="FireworksDisplay()[pri:0, instance:test.FireworksDisplayTest@8eb310]" name="FireworksDisplay" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FireworksDisplay -->
+        <test-method status="PASS" signature="randomColor()[pri:0, instance:test.FireworksDisplayTest@8eb310]" name="randomColor" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomColor -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.FireworksDisplayTest@8eb310]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.FireworksDisplayTest -->
+      <class name="test.CardTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CardTest@977098]" name="setUp" is-config="true" duration-ms="17" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="cardImageTest()[pri:0, instance:test.CardTest@977098]" name="cardImageTest" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cardImageTest -->
+        <test-method status="PASS" signature="cloneTest()[pri:0, instance:test.CardTest@977098]" name="cloneTest" duration-ms="5" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneTest -->
+        <test-method status="PASS" signature="faceUpTest()[pri:0, instance:test.CardTest@977098]" name="faceUpTest" duration-ms="10" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faceUpTest -->
+        <test-method status="PASS" signature="gettersTest()[pri:0, instance:test.CardTest@977098]" name="gettersTest" duration-ms="0" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettersTest -->
+        <test-method status="PASS" signature="highlightTest()[pri:0, instance:test.CardTest@977098]" name="highlightTest" duration-ms="9" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- highlightTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:test.CardTest@977098]" name="test" duration-ms="64" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="validSuitTest()[pri:0, instance:test.CardTest@977098]" name="validSuitTest" duration-ms="1" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSuitTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CardTest@977098]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:53Z" finished-at="2017-04-30T03:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CardTest -->
+      <class name="test.DiscardPileTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="setUp" is-config="true" duration-ms="6" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="DiscardPile()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="DiscardPile" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DiscardPile -->
+        <test-method status="PASS" signature="addCard()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="addCard" duration-ms="5" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCard -->
+        <test-method status="PASS" signature="addStack()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="addStack" duration-ms="8" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStack -->
+        <test-method status="PASS" signature="isValidMoveCard()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="isValidMoveCard" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidMoveCard -->
+        <test-method status="PASS" signature="isValidMoveCardStack()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="isValidMoveCardStack" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidMoveCardStack -->
+        <test-method status="PASS" signature="pop()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="pop" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pop -->
+        <test-method status="PASS" signature="pushCard()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="pushCard" duration-ms="6" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pushCard -->
+        <test-method status="PASS" signature="pushCardStack()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="pushCardStack" duration-ms="7" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pushCardStack -->
+        <test-method status="PASS" signature="setView()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="setView" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setView -->
+        <test-method status="PASS" signature="testGetCardAtLocationPoint()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="testGetCardAtLocationPoint" duration-ms="2" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardAtLocationPoint -->
+        <test-method status="PASS" signature="testGetNumViewableCards()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="testGetNumViewableCards" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNumViewableCards -->
+        <test-method status="FAIL" signature="testUndoPop()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="testUndoPop" duration-ms="1" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at test.DiscardPileTest.testUndoPop(DiscardPileTest.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUndoPop -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.DiscardPileTest@1fec2f9]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-30T03:27:52Z" finished-at="2017-04-30T03:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.DiscardPileTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

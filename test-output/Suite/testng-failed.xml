@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.DiscardPileTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testUndoPop"/>
+        </methods>
+      </class> <!-- test.DiscardPileTest -->
+      <class name="test.SolitaireLayoutTest">
+        <methods>
+          <include name="preferredLayoutSize"/>
+          <include name="afterClass"/>
+          <include name="minimumLayoutSize"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test.SolitaireLayoutTest -->
+      <class name="test.ChangeOptionsTest">
+        <methods>
+          <include name="getTimer"/>
+          <include name="setup"/>
+          <include name="getSounds"/>
+          <include name="afterClass"/>
+          <include name="getDifficulty"/>
+          <include name="actionPerformed"/>
+          <include name="ChangeOptions"/>
+          <include name="beforeClass"/>
+          <include name="getDrawCount"/>
+          <include name="getAnimation"/>
+        </methods>
+      </class> <!-- test.ChangeOptionsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
