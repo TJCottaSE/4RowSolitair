@@ -2,8 +2,11 @@ package test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNotNull;
 
 import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -35,10 +38,4 @@ public class FireworksDisplayTest {
   public void randomColor() {
     assertFalse(fw.randomColor().equals(null));
   }
-
-  @Test
-  public void restartDisplay() {
-    throw new RuntimeException("Test not implemented");
-  }
-
 }
