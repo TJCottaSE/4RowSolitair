@@ -18,20 +18,6 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- test.SolitaireLayoutTest -->
-      <class name="test.ChangeOptionsTest">
-        <methods>
-          <include name="getTimer"/>
-          <include name="setup"/>
-          <include name="getSounds"/>
-          <include name="afterClass"/>
-          <include name="getDifficulty"/>
-          <include name="actionPerformed"/>
-          <include name="ChangeOptions"/>
-          <include name="beforeClass"/>
-          <include name="getDrawCount"/>
-          <include name="getAnimation"/>
-        </methods>
-      </class> <!-- test.ChangeOptionsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,14 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.SolitaireLayoutTest">
+      <class name="test.ChangeOptionsTest">
         <methods>
-          <include name="preferredLayoutSize"/>
+          <include name="getTimer"/>
+          <include name="setup"/>
+          <include name="getSounds"/>
           <include name="afterClass"/>
-          <include name="minimumLayoutSize"/>
+          <include name="getDifficulty"/>
           <include name="beforeClass"/>
+          <include name="getDrawCount"/>
+          <include name="getAnimation"/>
         </methods>
-      </class> <!-- test.SolitaireLayoutTest -->
+      </class> <!-- test.ChangeOptionsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
