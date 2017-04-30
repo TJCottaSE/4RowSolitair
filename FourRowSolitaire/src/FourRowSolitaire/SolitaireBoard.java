@@ -1266,7 +1266,7 @@ public class SolitaireBoard extends JFrame
     }
 
     @SuppressWarnings("fallthrough")
-    public void getHint()
+    public String getHint()
     {
         CardStack source = new CardStack();
         CardStack destination = new CardStack();
@@ -1452,11 +1452,13 @@ public class SolitaireBoard extends JFrame
             }
 
             JOptionPane.showMessageDialog(this, string, "Hints Galore", JOptionPane.INFORMATION_MESSAGE);
+            return "Hints Galore";
         }
         else
         {
             JOptionPane.showMessageDialog(this, "There are no moves on the field.\n" +
                     "Either deal more cards or start a new game", "Hints", JOptionPane.INFORMATION_MESSAGE);
+            return "There are no moves on the field.\n";
         }
     }
 

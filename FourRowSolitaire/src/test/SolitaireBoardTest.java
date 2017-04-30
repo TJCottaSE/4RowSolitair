@@ -13,6 +13,7 @@ import java.awt.event.KeyEvent;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 import org.testng.TestNG;
@@ -24,32 +25,56 @@ import FourRowSolitaire.SolitaireBoard;
 
 public class SolitaireBoardTest  extends TestNG {
 
+	SolitaireBoard board = null;
+	
 	@BeforeClass
   	public void beforeClass() {
+		board = new SolitaireBoard();
   	}
 
   	@AfterClass
   	public void afterClass() {
+  		board = null;
   	}
 
   	@Test
   	public void createBoard() throws Exception {
-	  	SolitaireBoard target = new SolitaireBoard();
-	  	LinkedList<Integer> cards = null;
-	  	target.createBoard(cards);
-	  	assertTrue(false);
+	  	board.createBoard(null);
+	  	assertEquals(board.getDeckThroughs(), 1);
   	}
 
+  	/**
+  	 * Test creating a game board from stored data
+  	 */
   	@Test
   	public void dealOutCustomBoard() {
-  		assertTrue(false);
+  		Integer numbers[] = 
+  			{6, -1, 7, -1, 30, -1, 20, -1, 49, 12, 42,
+  					39, -1, 2, 13, 51, 11, 36, 22, -1,
+  					50, 25, 21, 3, 43, -1, 26, 4, 29,
+  					-1, 1, -1, 14, 15, 16, 17, -1, 27,
+  					28, -1, 40, 41, -1, 46, 19, 45, 34,
+  					24, 23, 10, 35, 9, 44, 32, 52, 5, 8,
+  					48, 33, 18, 38, 31, 37, -1, 47, -1};
+  		LinkedList<Integer> list = new LinkedList<Integer>();
+  		for (int i=numbers.length-1; i>0; i--){
+  			list.add(numbers[i]);
+  		}
+
+  		board.createBoard(list);
+  		assertEquals(board.getDeckThroughs(), 1);
   	}
 
   	@Test
   	public void getHint() throws Exception {
-	  	SolitaireBoard target = new SolitaireBoard();
-	  	target.getHint();
-	  	assertTrue(false);
+	  	boolean checker = false;
+	  	if (board.getHint().contains("Hints Galore")){
+	  		checker = true;
+	  	}
+	  	else if (board.getHint().contains("There are no moves on the field.\n")){
+	  		checker = true;
+	  	}
+	  	assertTrue(checker);
   	}
 
   	/**
@@ -58,7 +83,6 @@ public class SolitaireBoardTest  extends TestNG {
   	 */
   	@Test
   	public void getTimerNextGameStatus() throws Exception {
-		SolitaireBoard board = new SolitaireBoard();
 		board.setTimerStatus(1);
 		assertEquals(board.getTimerNextGameStatus(), 1);
 		board.setTimerStatus(0);
@@ -73,7 +97,6 @@ public class SolitaireBoardTest  extends TestNG {
   	 */
   	@Test
   	public void newGame() throws Exception {
-		SolitaireBoard board = new SolitaireBoard();
 		board.createBoard(null);
 		board.setDeckThroughs(2);
 		board.newGame(0);
@@ -86,9 +109,8 @@ public class SolitaireBoardTest  extends TestNG {
   	 * @throws Exception
   	 */
   	@Test
-  	public void resetStats() throws Exception {
-		SolitaireBoard target = new SolitaireBoard();
-		target.resetStats();
+  	public void resetStats() throws Exception {		
+		board.resetStats();
 		//assertTrue(false);
         int count = 0, temp = 1;
         int gamesPlayed1e = 1, gamesWon1e = 1, winStreak1e = 1, lossStreak1e = 1,
@@ -244,8 +266,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * @throws Exception
   	 */
   	@Test
-  	public void saveOptions() throws Exception {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void saveOptions() throws Exception { 		
   		board.setDrawCount(2);
   		board.setNewDrawCount(3);
   		board.setDeckNumber(3);
@@ -416,8 +437,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * @throws Exception
   	 */
   	@Test
-  	public void setAppearance() throws Exception {
-		SolitaireBoard board = new SolitaireBoard();
+  	public void setAppearance() throws Exception {		
 		int deck = 1;
 		int background = 1;
 		board.createBoard(null);
@@ -431,8 +451,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setBackgroundNumber() {
-	  	SolitaireBoard board = new SolitaireBoard();
+  	public void setBackgroundNumber() {	  	
 	  	board.setBackgroundNumber(1);
 	  	assertEquals(board.getBackgroundNumber(), 1);
 	  	board.setBackgroundNumber(6);
@@ -444,8 +463,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setDeckNumber() {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setDeckNumber() {  		
   		board.setDeckNumber(1);
   		assertEquals(board.getDeckNumber(), 1);
   		board.setDeckNumber(3);
@@ -460,8 +478,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * @throws Exception
   	 */
   	@Test
-  	public void setDeckThroughs() throws Exception {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setDeckThroughs() throws Exception {  		
   		int deckThroughs = 0;
   		board.setDeckThroughs(deckThroughs);
   		assertEquals(board.getDeckThroughs(), 0);
@@ -474,8 +491,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setDifficulty() {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setDifficulty() {  		
   		board.setDifficulty(0);
   		assertEquals(board.getDifficulty(), 2);
   		board.setDifficulty(1);
@@ -493,8 +509,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setDrawCount() {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setDrawCount() {  		
   		board.setDrawCount(0);
   		assertEquals(board.getDrawCount(), 1);
   		board.setDrawCount(1);
@@ -508,8 +523,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setNewDifficulty() {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setNewDifficulty() {  		
   		board.setNewDifficulty(0);
   		assertEquals(board.getNewDifficulty(), 2);
   		board.setNewDifficulty(1);
@@ -527,8 +541,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setNewDrawCount() {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setNewDrawCount() {		
   		board.setNewDrawCount(1);
   		assertEquals(board.getNewDrawCount(), 1);
   		board.setNewDrawCount(2);
@@ -543,8 +556,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * @throws Exception
   	 */
   	@Test
-  	public void setTimerStatus() throws Exception {
-		SolitaireBoard board = new SolitaireBoard();
+  	public void setTimerStatus() throws Exception {		
 		board.setTimerStatus(4);
 		assertEquals(board.getTimerStatus(), 0);
 		board.setTimerStatus(1);
@@ -563,8 +575,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setWinAnimationStatus() {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setWinAnimationStatus() {  		
   		board.setWinAnimationStatus(0);
   		assertEquals(board.getWinAnimationStatus(), 0);
   		board.setWinAnimationStatus(1);
@@ -578,8 +589,7 @@ public class SolitaireBoardTest  extends TestNG {
   	 * This tests both getters and setters
   	 */
   	@Test
-  	public void setWinSoundsStatus() {
-  		SolitaireBoard board = new SolitaireBoard();
+  	public void setWinSoundsStatus() { 		
   		board.setWinSoundsStatus(0);
   		assertEquals(board.getWinSoundsStatus(), 0);
   		board.setWinSoundsStatus(1);
